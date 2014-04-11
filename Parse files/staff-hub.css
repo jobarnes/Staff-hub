@@ -327,7 +327,7 @@ body.content .jumbotron {
 .box {
     border: 1px solid #ccc;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .box h2 {
     color: #036;
@@ -337,6 +337,9 @@ body.content .jumbotron {
 }
 .box a {
     border-bottom: none;
+}
+.box p a {
+    border-bottom: 1px dotted #ccc;
 }
 .how-bar {
     margin: 30px 0 40px 0;
@@ -364,9 +367,6 @@ body.content .jumbotron {
 /* ===== SM ===== */
 .sm li {
     padding-right: 25px;
-}
-.sm .fa {
-    font-size: 1.6em;
 }
 .fa-facebook {
     color: #405D9B;
@@ -968,8 +968,37 @@ main .media {
 .event-list-item .event-date {
     display: block;
 }
+.news-staff .media:first-child {
+    padding-top: 14px;
+}
+.news-articles .box .w-head {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.news-articles h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #666;
+}
 
-
+/* ===== NEWS ===== */
+.box .topics, .box .media-type {
+    display: none;
+    margin-left: 120px;
+}
+.box .topics:before, .box .media-type:before {
+    content:"Topics:";
+    padding-right: 15px;
+}
+.box .topics a, .media-type a {
+    padding-right: 20px;
+}
+/*.feature {
+    background-color: #E3EAED;
+}*/
+.feature .img {
+    padding-bottom: 15px;
+}
 
 
 
@@ -1001,24 +1030,29 @@ main .media {
    position: relative;
    min-height: 130px;
 }
-.musse .article h3, .field-field-teaser, .musse a.more {
+.musse .article h3, .field-field-teaser, .musse .w-body a.more, .field-type-text-long, .field-type-text-with-summary {
    margin-left: 120px;
 }
 .musse .article h3 {
    margin-top: 0;
 }
-.field-field-teaser-img {
+.field-field-teaser-img, .field-name-placeholder-image-if-thumb-empty, .field-name-field-splashimage {
    width: 100px;
    float: left;
    margin-right: 20px;
    position: absolute;
    top: 0px;
 }
-.field-field-teaser-img img {
+.field-field-teaser-img img, .field-name-field-splashimage {
    width: 100px;
 }
-
-
+.news-articles .w-body a.more {
+   padding-top: 10px;
+   display: inline-block;
+}
+.field-item {
+   display: block;
+}
 
 /* RESPONSIVE MEDIA QUERIES */
 @media screen and (min-width: 380px){
