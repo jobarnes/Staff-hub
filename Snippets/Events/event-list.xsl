@@ -38,7 +38,12 @@
       <span class="month"><xsl:value-of select="date:month-abbreviation($date)" /></span>
       <xsl:text> </xsl:text>
       <span class="year"><xsl:value-of select="date:year($date)" /></span>
-      <xsl:text> </xsl:text>
+      <xsl:text>, </xsl:text>
+      <span class="hour"><xsl:value-of select="date:hour-in-day($time)" /></span>
+      <xsl:text>:</xsl:text>
+      <span class="minute"><xsl:value-of select="date:minute-in-hour($time)" /></span> 
+	  <xsl:text>, </xsl:text>
+	  <span class="hour"><xsl:value-of select="xs:time($time)" /></span>      
     </xsl:element>
   </xsl:template>
  
