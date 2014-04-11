@@ -1,6 +1,7 @@
 /* 
 uni blue.......#003366
 dark blue:.....#002953
+bright blue:...#1F66AD
 */
 
 /* ===== BASE ===== */
@@ -768,13 +769,8 @@ ol.breadcrumb {
 }
 .main .a-z li {
     background: none repeat scroll 0 0 transparent;
-    float: left;
-    height: 110px;
-    overflow: hidden;
     padding-bottom: 2em;
     padding-left: 0;
-    width: 45%;
-    margin-right: 5%;
 }
 .a-z hr {
     clear:both;
@@ -1031,6 +1027,10 @@ main .media {
     font-size: 1em;
     text-transform: uppercase;
     color: #666;
+    margin-bottom: 1em;
+}
+main .news-articles .article {
+    padding-bottom: 40px;
 }
 
 /* ===== NEWS ===== */
@@ -1044,8 +1044,7 @@ main .media {
 }
 .box .topics a, .media-type a {
     padding-right: 20px;
-}
-
+} 
 /*.feature {
     background-color: #E3EAED;
 }*/
@@ -1054,6 +1053,28 @@ main .media {
 }
 
 
+/* ==== IN THE MEDIA ===== */
+main .title a {
+    border-bottom: none;
+}
+.list-2-col .title a {
+    font-size: 18px;
+    line-height: 1.2em;
+    color: #1F66AD;
+}
+main .list-2-col li {
+    background: none;
+    padding-left: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+.list-2-col b {
+    font-weight: 400;
+    color: #777;
+}
+    
 
 /* ===== LISTS ===== */
 .main .chunky-list li {
@@ -1158,6 +1179,22 @@ a.site-title {
 }
 .navbar-right {
    width: 50%;
+}
+main .news-articles .article {
+    padding-bottom: 0px;
+}
+main .list-2-col li {
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+    height: 230px;
+}
+.main .a-z li {
+    float: left;
+    height: 110px;
+    width: 45%;
+    margin-right: 5%;
+    overflow: hidden;
 }
 }
 
