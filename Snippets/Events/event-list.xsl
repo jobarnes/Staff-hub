@@ -17,23 +17,13 @@
 
  
   <xsl:template match="api-v1-entities-event-item">
-    <li class="event-list-item row event media">
+    <li class="event-list-item event">
 	<div class="date"><xsl:apply-templates select="start-time" /></div>
 	<div class="event-details inner">
 		<xsl:element name="a">
 		<xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute>
-		<h3 class="title"><xsl:value-of select="title" /></h3>
+		<span class="title"><xsl:value-of select="title" /></span>
 		</xsl:element>
-
-		<p class="summary"><xsl:value-of select="substring(description, 0, 200)"/>
-		<xsl:text disable-output-escaping="yes">...</xsl:text></p>
-		<p>
-		<xsl:element name="a">
-		<xsl:attribute name="class">more</xsl:attribute>
-		<xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute><xsl:text>read more</xsl:text>
-		<span class="accessiblity hide"><xsl:text> about </xsl:text><xsl:value-of select="title"/></span><xsl:text> </xsl:text> <i class="fa fa-caret-right"></i>
-		</xsl:element>
-		</p>
 	</div>
     </li>
   </xsl:template>
@@ -48,6 +38,7 @@
       <span class="month"><xsl:value-of select="date:month-abbreviation($date)" /></span>
       <xsl:text> </xsl:text>
       <span class="year"><xsl:value-of select="date:year($date)" /></span>
+      <xsl:text> </xsl:text>
     </xsl:element>
   </xsl:template>
  

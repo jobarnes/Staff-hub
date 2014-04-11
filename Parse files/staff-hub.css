@@ -933,6 +933,7 @@ main .media {
     margin-top: 0;
 }
 .media .date {
+    background: #036;
     background: linear-gradient(to bottom, #606C88 0%, #3F4C6B 100%) repeat scroll 0 0 transparent;
     border-radius: 4px 4px 4px 4px;
     color: #FFFFFF;
