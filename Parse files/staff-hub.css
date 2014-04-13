@@ -1112,7 +1112,7 @@ input#gsc-i-id1 {background-image:none !important;}
 .how-bar .gsc-search-button {display:none;} /* no button on the home page */
 table.gsc-search-box {
 	margin-bottom: 0;
-width:70%;
+width:70% !important;
 }
 .gsc-input-box {
 	padding-bottom: 4px;
