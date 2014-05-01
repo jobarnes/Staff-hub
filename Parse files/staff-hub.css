@@ -1138,10 +1138,11 @@ input#name-input:focus {
 }
 input.gsc-input {
   font-size:14px !important;
+  background: none !important;
 }
 .gsc-search-button input {
   font-size:14px !important;
-  padding:5px;  
+  padding:5px;
 }
 .gsc-i-id1 {
 	float:left;
@@ -1151,10 +1152,6 @@ input.gsc-input {
 .gsc-branding {
 	position:absolute;
 	left:-999em;
-}
-table.gsc-search-box {
-    margin-bottom: 0;
-	width:70% !important;
 }
 .gsc-input-box {
     padding-bottom: 4px;
