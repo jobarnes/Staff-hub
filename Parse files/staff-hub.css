@@ -1,6 +1,3 @@
-/* @override 
-	http://cms.unimelb.edu.au/staff/intranet/support/design/staff.css */
-
 /* 
 uni blue.......#003366
 dark blue:.....#002953
@@ -13,7 +10,14 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
-
+::selection {
+    background: #2D6098; /* Firefox */
+    color: #fff;
+}
+::-moz-selection {
+    background: #2D6098; /* Firefox */
+    color: #fff;
+}
 header {
     padding-top: 20px;
 }
@@ -385,6 +389,7 @@ body.content .jumbotron {
 .quicklinks hr {
     border: none;
     display: block;
+    clear: both;
 }
 .quicklinks ul li {
     width: 33.3%;
@@ -418,6 +423,9 @@ body.content .jumbotron {
 .quicklinks i.fa:hover {
     color: #fff;
 }
+.quicklinks i.fa:focus, .quicklinks i.fa:active {
+    border:  1px dotted #ccc;
+}
 .quicklinks i.fa-calendar {
     background-color: #2D6098;
     color: #96B0CC;
@@ -430,31 +438,35 @@ body.content .jumbotron {
     background-color: #764E89;
     color: #BBA7C4;
 }
-.quicklinks i.fa-plus-square {
+/* .quicklinks i.fa-plus-square {
+    background-color: #963F69;
+    color: #CB9FB4;
+} */
+.quicklinks i.fa-users {
     background-color: #963F69;
     color: #CB9FB4;
 }
-.quicklinks i.fa-users {
+.quicklinks i.fa-th-list {
     background-color: #B2333E;
     color: #D9999F;
 }
-.quicklinks i.fa-th-list {
+.quicklinks i.fa-pencil {
     background-color: #BA610D;
     color: #DDB086;
 }
-.quicklinks i.fa-pencil {
+.quicklinks i.fa-map-marker {
     background-color: #C7A500;
     color: #E2D07A;
 }
-.quicklinks i.fa-map-marker {
+.quicklinks i.fa-book {
     background-color: #7F9B2A;
     color: #BFCD95;
 }
-.quicklinks i.fa-book {
+.quicklinks i.fa-plane {
     background-color: #00865D;
     color: #80C3AE;
 }
-.quicklinks i.fa-plane {
+.quicklinks i.fa-bookmark {
     background-color: #006883;
     color: #80B4C1;
 }
@@ -1104,8 +1116,8 @@ main .list-2-col li {
     margin: 30px 0 40px 0;
 }
 .people-search, .google-search {
-	width: 50%;
-	float: left;
+    width: 50%;
+    float: left;
 }
 .how-bar input#name-input {
     padding: 5px;
@@ -1145,13 +1157,13 @@ input.gsc-input {
   padding:5px;
 }
 .gsc-i-id1 {
-	float:left;
-	margin-right:1em;
-	line-height:2;
+    float:left;
+    margin-right:1em;
+    line-height:2;
 }
 .gsc-branding {
-	position:absolute;
-	left:-999em;
+    position:absolute;
+    left:-999em;
 }
 .gsc-input-box {
     padding-bottom: 4px;
