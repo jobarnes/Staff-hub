@@ -415,7 +415,7 @@ body.content .jumbotron {
     background-color: #EFEFEF;
     font-size: 1.8em;
     margin-bottom: 10px;
-    padding: 35px 25px;
+    padding: 30px 25px;
     border-radius: 6px;
     width: 100%;
     text-align: center;
@@ -1044,7 +1044,7 @@ main .news-articles .article {
     padding-bottom: 40px;
 }
 
-/* ===== NEWS ===== */
+/* @group News */ /* ==================================================== */
 .box .topics, .box .media-type {
     display: none;
     margin-left: 120px;
@@ -1062,9 +1062,9 @@ main .news-articles .article {
 .feature .img {
     padding-bottom: 15px;
 }
+/* @end */
 
-
-/* ==== IN THE MEDIA ===== */
+/* @group In the Media */ /* ============================================= */
 main .title a {
     border-bottom: none;
 }
@@ -1085,9 +1085,43 @@ main .list-2-col li {
     font-weight: 400;
     color: #777;
 }
+/* @end */
+
+/* @group MUSSE */ /* ======================================================= */
+.musse .article {
+   position: relative;
+   min-height: 130px;
+}
+.musse .article h3, .field-field-teaser, .news-articles .w-body a.more, .field-type-text-long, .field-type-text-with-summary {
+   margin-left: 120px;
+}
+.musse .article h3 {
+   margin-top: 0;
+}
+.field-field-teaser-img, .field-name-placeholder-image-if-thumb-empty, .field-name-field-splashimage {
+   width: 100px;
+   float: left;
+   margin-right: 20px;
+   position: absolute;
+   top: 0px;
+}
+.field-field-teaser-img img, .field-name-field-splashimage {
+   width: 100px;
+}
+.news-articles .w-body a.more {
+   padding-top: 10px;
+   display: inline-block;
+}
+.field-item {
+   display: block;
+}
+.w-body .col-md-6 {
+   padding-bottom: 0; margin-bottom: 0;
+}
+/* @end */
     
 
-/* ===== LISTS ===== */
+/* @group lists */ /* ===================================================== */
 .main .chunky-list li {
     padding-bottom: 1em;
 }
@@ -1109,6 +1143,7 @@ main .list-2-col li {
 .pager li {
     background: none !important;
 }
+/* @end */
 
 /* @group how bar */
 
@@ -1274,37 +1309,6 @@ tr.gsc-completion-selected .gsc-completion-snippet {
 }
 /* @end */
 
-/* ===== MUSSE ===== */
-.musse .article {
-   position: relative;
-   min-height: 130px;
-}
-.musse .article h3, .field-field-teaser, .news-articles .w-body a.more, .field-type-text-long, .field-type-text-with-summary {
-   margin-left: 120px;
-}
-.musse .article h3 {
-   margin-top: 0;
-}
-.field-field-teaser-img, .field-name-placeholder-image-if-thumb-empty, .field-name-field-splashimage {
-   width: 100px;
-   float: left;
-   margin-right: 20px;
-   position: absolute;
-   top: 0px;
-}
-.field-field-teaser-img img, .field-name-field-splashimage {
-   width: 100px;
-}
-.news-articles .w-body a.more {
-   padding-top: 10px;
-   display: inline-block;
-}
-.field-item {
-   display: block;
-}
-.w-body .col-md-6 {
-   padding-bottom: 0; margin-bottom: 0;
-}
 
 /* RESPONSIVE MEDIA QUERIES */
 @media screen and (min-width: 380px){
@@ -1324,9 +1328,6 @@ img.logo {
 .quicklinks {
     padding-right: 0px;
 }
-.quicklinks div {
-    padding-left: 15px;
-}
 .quicklinks i.fa {
    font-size: 3em;
 }
@@ -1334,7 +1335,8 @@ nav.container {
     padding: 0px 15px;
 } 
 }
-@media(max-width: 767px) {
+
+@media screen and (max-width: 767px) {
 .goodbye a {
     float: right;
     color: #fff !important;
@@ -1344,7 +1346,7 @@ nav.container {
 }
 }
 
-@media(min-width:768px){
+@media screen and (min-width:768px){
 .navbar-inverse .navbar-brand {
     padding-top: 0px;
 } 
@@ -1383,6 +1385,9 @@ main .list-2-col li {
     border: none;
     padding-bottom: 20px;
     }
+.quicklinks div {
+    padding-left: 15px;
+}
 .quicklinks i.fa {
     font-size: 1.8em;
 }
@@ -1399,9 +1404,9 @@ footer .meta {
 }
 
 @media screen and (min-width: 1200px) {
-.quicklinks i.fa {
+/* .quicklinks i.fa {
     font-size: 3em;
-}
+} */
 }
 
 
