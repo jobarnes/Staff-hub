@@ -51,7 +51,7 @@ body.content h1 {
 }
 /* @end */
 
-/* @group Main */ /* =========================================================== MAIN */
+/* @group Main */ /* ============================================================= MAIN */
 main.backdrop {
     background-color: #fff;
 }
@@ -288,13 +288,17 @@ nav li:nth-child(3) {
    color: #fff;
    text-decoration: none;
 }
+.tab a:focus {
+	background-color: #00457C;
+	border-color: #B2333E;
+}
 /* nav li:nth-child(2) {
     display: none;
 } */
 /* @end */
 
 /* @group Local footer */ /* ==================================================== Local footer */
-footer {
+footer.local {
     background-color: #eee;
     font-size: 0.90em;
     padding: 40px 0px;
@@ -356,6 +360,20 @@ input#search {
 }
 /* @end */
 
+/* @group Global footer */ /* ==================================================== */
+.page-footer.backdrop {
+	background-color: #0C304A;
+}
+.footer-logo-link {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.page-footer-logo {
+	max-height: 70px;
+	margin: 50px auto;
+}
+/* @end */
 
 /* @group Misc */ /* ==================================================== */
 abbr[title], abbr[data-original-title] {
