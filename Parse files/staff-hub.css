@@ -261,21 +261,21 @@ a.site-title:hover {
 nav.container {
     padding: 0px;
 }
-nav ul {
+.tab-nav ul {
     padding-bottom: 0px; margin-bottom: 0px;
 }
-nav .list-inline > li {
+.tab-nav .list-inline > li {
     padding: 0px;
 }
-nav .tab {
+.tab-nav .tab {
     border: 1px solid #ccc;
     border-bottom: none;
     width: 100%;
 }
-nav .current {
+.tab-nav .current {
     background-color: #efefef;
 }
-nav li:nth-child(3) {
+.tab-nav li:nth-child(3) {
     border-right: 1px solid #ccc;
 }
 .tab a {
@@ -302,6 +302,8 @@ footer.local {
     background-color: #eee;
     font-size: 0.90em;
     padding: 40px 0px;
+    position: relative;
+    z-index: 100;
 }
 footer h2 {
     font-size: 1.2em;
@@ -363,6 +365,9 @@ input#search {
 /* @group Global footer */ /* ==================================================== */
 .page-footer.backdrop {
 	background-color: #0C304A;
+	padding-bottom: 50px;
+	position: relative;
+	z-index: 100;
 }
 .footer-logo-link {
 	display: block;
@@ -372,6 +377,32 @@ input#search {
 .page-footer-logo {
 	max-height: 70px;
 	margin: 50px auto;
+}
+footer.global p, footer.global ul {
+	text-align: center;
+}
+footer.global ul {
+	padding: 20px 0;
+	border-top: 1px solid #304E64;
+	border-bottom: 1px solid #304E64;
+	margin-bottom: 50px;
+}
+footer.global .foot-nav li {
+	padding-right: 2em;
+}
+footer.global a {
+	color: #fff;
+	font-weight: 400;
+}
+footer small {
+	color: #82A1BD;
+	display: block;
+}
+footer small a {
+	color: #82A1BD;
+}
+.page-footer-est1853 {
+	float: right;
 }
 /* @end */
 
@@ -916,6 +947,7 @@ a.to-top {
     padding: 20px;
     position: fixed;
     right: 20px;
+    z-index: 1;
 }
 /* @end */
 
@@ -1274,7 +1306,7 @@ tr.gsc-completion-selected .gsc-completion-snippet {
 
 /* RESPONSIVE MEDIA QUERIES */
 @media screen and (min-width: 380px){
-nav .tab {
+.tab-nav .tab {
     width: auto;
     border-right: none;
     }
@@ -1334,6 +1366,14 @@ main .list-2-col li {
     width: 45%;
     margin-right: 5%;
     overflow: hidden;
+}
+footer.global p, footer.global ul {
+	text-align: left;
+}
+footer.global .social {
+	text-align: right;
+	padding-right: 0;
+	padding-left: 2em;
 }
 }
 
