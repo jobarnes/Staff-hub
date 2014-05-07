@@ -288,7 +288,7 @@ nav.container {
    color: #fff;
    text-decoration: none;
 }
-.tab a:focus {
+.tab a:current, .tab a:focus {
 	background-color: #00457C;
 	border-color: #B2333E;
 }
@@ -369,6 +369,9 @@ input#search {
 	position: relative;
 	z-index: 100;
 }
+footer.global {
+	text-align: center;
+}
 .footer-logo-link {
 	display: block;
 	text-align: center;
@@ -384,8 +387,12 @@ footer.global p, footer.global ul {
 footer.global ul {
 	padding: 20px 0;
 	border-top: 1px solid #304E64;
+	margin-bottom: 0px;
+}
+footer.global ul.social {
+	padding: 16px;
 	border-bottom: 1px solid #304E64;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 footer.global .foot-nav li {
 	padding-right: 2em;
@@ -394,15 +401,25 @@ footer.global a {
 	color: #fff;
 	font-weight: 400;
 }
+footer.global .social a {
+	padding:  0 40px;
+}
 footer small {
 	color: #82A1BD;
+	clear: left;
 	display: block;
+	line-height: 1.6em;
+	text-align: center;
 }
 footer small a {
-	color: #82A1BD;
+	color: #82A1BD !important;
 }
 .page-footer-est1853 {
-	float: right;
+	text-align: center;
+	padding-bottom: 1.5em;
+}
+.page-footer-section.social img {
+	max-width: 2em;
 }
 /* @end */
 
@@ -882,18 +899,38 @@ body.content .jumbotron {
 .hero-links .h-link {
     padding-bottom: 50px;
 }
+.h-link h3 {
+	font-weight: 400;
+}
 .main-links {
     border-top: 1px solid #DDD;
     padding-top: 2em;
+}
+.main-links .col-md-12 {
+	border-top: 1px solid #ccc;
+	padding-top: 20px;
+	margin-top: 30px;
 }
 .main-links span:nth-child(n+3) {
     display: block;
     padding-top: 25px;
 }
-.main-links .m-link a {
+.main-links span.link-row:nth-child(n+3) { /* test for rows */
+    display: block;
+    padding-top: 0px;
+}
+.main-links .m-link {
+	display: block;
+}
+.main-links .m-link a, .hero-links .h-link a {
     color: #678AAF;
     border-bottom: none;
 }
+
+/* .m-link a .fa {
+	color: #eee;
+	padding-right: 5px; 
+} */
 /* @end */
 
 /* @group A-Z list */ /* ==================================================== A-Z list */
@@ -1367,13 +1404,10 @@ main .list-2-col li {
     margin-right: 5%;
     overflow: hidden;
 }
-footer.global p, footer.global ul {
-	text-align: left;
-}
-footer.global .social {
-	text-align: right;
-	padding-right: 0;
-	padding-left: 2em;
+.m-link.link-row {
+	width: 25%; 
+	display: block; 
+	float: left;
 }
 }
 
@@ -1402,6 +1436,31 @@ footer .meta {
 #directory {
     padding-top: 0px; margin-top: 0;
     border-top: none;
+}
+footer.global p, footer.global ul {
+	text-align: left;
+}
+footer.global .foot-nav {
+	border-bottom: 1px solid #304E64;
+}
+footer.global .social {
+	text-align: right;
+	padding-right: 0;
+	padding-left: 2em;
+}
+footer small {
+	float: left;
+	clear: left;
+	text-align: left;
+}
+.page-footer-est1853 {
+	float: right;
+}
+footer.global ul {
+	margin-bottom: 50px;
+}
+footer.global .social a {
+	padding:  0;
 }
 }
 
