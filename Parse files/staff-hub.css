@@ -78,7 +78,7 @@ main .content {
        font-size: 1em;
 }
 .main a {
-    border-bottom: 1px dotted #666;
+    border-bottom: 1px dotted #767676;
 }
 /* @end */
 
@@ -1003,6 +1003,8 @@ a.to-top {
 
 /* @group Events */ /* ==================================================== Events */
 
+/* ===== EVENTS ===== */
+
 main .media {
     margin: 1em 0;
 }
@@ -1075,21 +1077,13 @@ main .media {
 .event-list-item .event-date {
     display: block;
 }
-.news-staff .media:first-child {
-    padding-top: 14px;
+.main ul.event-list li.event-list-item {
+	background: none;
+	padding-left: 0;
 }
-.news-articles .box .w-head {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
-}
-.news-articles h2 {
-    font-size: 1em;
-    text-transform: uppercase;
-    color: #666;
-    margin-bottom: 1em;
-}
-main .news-articles .article {
-    padding-bottom: 40px;
+.a973389 .list-2-col .title a {
+	color: #485A79;
+	border-bottom: none;
 }
 /* @end */
 
@@ -1111,6 +1105,22 @@ main .news-articles .article {
 .feature .img {
     padding-bottom: 15px;
 }
+.news-staff .media:first-child {
+    padding-top: 14px;
+}
+.news-articles .box .w-head {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.news-articles h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 1em;
+}
+main .news-articles .article {
+    padding-bottom: 40px;
+} */
 /* @end */
 
 /* @group In the Media */ /* ============================================= */
