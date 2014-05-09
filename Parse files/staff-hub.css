@@ -315,6 +315,9 @@ footer .meta {
 footer ul {
     padding-left: 0px;
 }
+footer #about {
+	padding-top: 4em;
+}
 footer .about li {
     list-style: none;
 }
@@ -331,6 +334,7 @@ dl.inline dd {
 dl.inline dt, dl.inline dd {
     float: left;
     margin: 0 0.5em 0 0;
+    padding-top: 1em;
 }
 dl.inline dd + dt, dl.inline dd + dd {
     clear: left
@@ -434,7 +438,7 @@ abbr[title], abbr[data-original-title] {
 .first {
     font-weight: bold;
 }
-.index .row {
+/* .index .row {
     padding-bottom: 40px;
 }
 .index .row.last {
@@ -442,7 +446,7 @@ abbr[title], abbr[data-original-title] {
 }
 .landing h2 {
     padding-top: 20px;
-}
+} */
 .section {
     padding-top: 40px;
 }
@@ -893,18 +897,30 @@ body.content .jumbotron {
 /* @end */
 
 /* @group Index pages */ /* =================================================== INDEX LANDING PAGES */
+.index .container.main {
+	padding-bottom: 20px;
+}
 .hero-links {
+	background-color: #EDF2F7;
+	padding-bottom: 25px;
     padding-top: 25px;
 }
 .hero-links .h-link {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 .h-link h3 {
 	font-weight: 400;
 }
+.hero-links .h-link a {
+	color: #036;
+}
+.h-link p {
+	font-size: 1.1em;
+}
 .main-links {
-    border-top: 1px solid #DDD;
+/*  border-top: 1px solid #DDD; */
     padding-top: 2em;
+    padding-bottom: 4em;
 }
 .main-links .col-md-12 {
 	border-top: 1px solid #ccc;
@@ -921,8 +937,18 @@ body.content .jumbotron {
 }
 .main-links .m-link {
 	display: block;
+	padding-bottom: 1em;
 }
-.main-links .m-link a, .hero-links .h-link a {
+.main-links h2 {
+	border-bottom: 1px dotted #CCC;
+	margin-bottom: 1em;
+	padding-top: 2em;
+	padding-bottom: 10px;
+}
+.main-links .m-link h3 {
+	margin-top: 0;
+}
+.main-links .m-link a {
     color: #678AAF;
     border-bottom: none;
 }
@@ -1414,10 +1440,16 @@ main .list-2-col li {
     margin-right: 5%;
     overflow: hidden;
 }
+.main-links h2 {
+	padding-top: 0;
+}
 .m-link.link-row {
 	width: 25%; 
 	display: block; 
 	float: left;
+}
+footer .meta {
+    margin-top: 0px;
 }
 }
 
@@ -1440,12 +1472,15 @@ main .list-2-col li {
 .find-form label {
     padding-left: 15px;
 }
-footer .meta {
-    margin-top: 0px;
-}
 #directory {
     padding-top: 0px; margin-top: 0;
     border-top: none;
+}
+footer #about {
+	padding-top: 0em;
+}
+dl.inline dt, dl.inline dd {
+    padding-top: 0;
 }
 footer.global p, footer.global ul {
 	text-align: left;
