@@ -1,0 +1,22 @@
+<link href="./?a=1018202" rel="stylesheet"><!-- datetimepicker -->
+<script src="./?a=1017149"></script><!-- typeahead -->
+<script src="./?a=1017998"></script><!-- datetimepicker -->
+
+//  ** Date Time Picker init
+$('#metadata_field_text_975126_value').datetimepicker()
+    .datetimepicker({
+	format:'l j F, ga',
+	minDate:'-1970/01/02', // yesterday
+    step:15,
+    validateOnBlur:false
+});
+$('#metadata_field_text_1017602_value').datetimepicker({
+	timepicker:false,
+	format:'l j F',
+	minDate:'-1970/01/02' // yesterday
+});
+$('#metadata_field_text_1018265_value').datetimepicker({
+    datepicker:false,
+    format:'ga',
+    step:15
+});
