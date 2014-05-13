@@ -1,0 +1,47 @@
+<div class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+      <div class="main-nav-dd dropdown hidden">
+         <!-- Toggle button for menu, you can place it anywhere -->
+         <div class="menu-toggle-button" data-menu-id="main-nav">
+         <i class="fa fa-bars"></i></div>
+      </div> 
+      
+        <div class="navbar-header">
+          <a href="//unimelb.edu.au" title="Return to homepage" class="site-logo navbar-brand">
+              <p class="visible-xs">University of Melbourne</p>
+              <img src="//cms.unimelb.edu.au/staff/intranet/library/images/interface/uom-v.jpg" alt="University of Melbourne" class="logo hidden-xs" />
+          </a>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="loginorout dropdown">
+            <MySource_AREA id_name="logout_box" design_area="login_form">
+                 <MySource_LOGIN_SECTION>
+                 <li>
+                  <a class="dropdown-toggle login" data-toggle="dropdown" href="%globals_asset_url%/_login">
+                  <i class="fa fa-signin"></i> Login</a> 
+                  <b class="caret"></b>
+                  </li>
+                    <!-- not logged in -->
+                 </MySource_LOGIN_SECTION>
+                 <MySource_LOGOUT_SECTION>
+                    <MySource_PRINT var="form_open" />
+                 <li class="hello dropdown-toggle clearfix" data-toggle="dropdown">
+                  <i class="fa fa-user"></i><span class="hidden-xs"> Hello 
+                    <MySource_PRINT id_name="__global__" var="current_user" default="[Not Logged In]" attr="name" /></span> 
+                  <b class="caret"></b>
+                  </li>
+                    <ul class="dropdown-menu">
+                    <li class="goodbye">
+                    <a href="%globals_asset_url%/?SQ_ACTION=logout"><i class="fa fa-sign-out"></i> Log out</a>
+                    </li>
+                    </ul>
+                    <MySource_PRINT var="form_close" />
+                 </MySource_LOGOUT_SECTION>
+             </MySource_AREA>
+             </li>
+            </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+</div>
