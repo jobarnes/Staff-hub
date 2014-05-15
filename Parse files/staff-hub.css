@@ -368,7 +368,7 @@ input#search {
 
 /* @group Global footer */ /* ==================================================== */
 .page-footer.backdrop {
-    background-color: #002851;
+    background-color: #072442;
     padding-bottom: 50px;
     position: relative;
     z-index: 100;
@@ -769,11 +769,12 @@ form div.sq-backend-smallprint {
 }
 .jumbotron h1 {
    color: #2A5F99;
-   font-size: 50px;
+   font-size: 24px;
    padding-bottom: .2em;
 }
 .jumbotron p {
-   font-size: 20px;
+   font-size: 16px;
+   font-weight: 200;
 }
 #hot.box {
    -webkit-border-radius: 6px;
@@ -1506,6 +1507,15 @@ footer.global ul {
 }
 footer.global .social a {
     padding:  0;
+}
+.jumbotron h1 {
+   color: #2A5F99;
+   font-size: 48px;
+   padding-bottom: .2em;
+}
+.jumbotron p {
+   font-size: 20px;
+   font-weight: 100;
 }
 }
 
