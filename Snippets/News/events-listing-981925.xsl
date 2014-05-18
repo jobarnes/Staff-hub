@@ -22,7 +22,11 @@ extension-element-prefixes="date">
 <div class="event-details inner">
 <xsl:element name="a">
 <xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute>
-<h3 class="title"><xsl:value-of select="title" /></h3>
+<xsl:element name="h3">
+<xsl:attribute name="id">e<xsl:value-of select="id"/></xsl:attribute>
+<xsl:attribute name="class">title</xsl:attribute>
+<xsl:value-of select="title" />
+</xsl:element>
 </xsl:element>
 
 <p class="summary"><xsl:value-of select="substring(description, 0, 200)"/>
@@ -30,6 +34,7 @@ extension-element-prefixes="date">
 <p>
 <xsl:element name="a">
 <xsl:attribute name="class">more</xsl:attribute>
+<xsl:attribute name="aria-labelledby">e<xsl:value-of select="id"/></xsl:attribute>
 <xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute><xsl:text>read more</xsl:text>
 <span class="accessiblity hide"><xsl:text> about </xsl:text><xsl:value-of select="title"/></span><xsl:text> </xsl:text> <i class="fa fa-caret-right"></i>
 </xsl:element>
