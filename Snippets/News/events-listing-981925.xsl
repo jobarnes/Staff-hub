@@ -31,7 +31,6 @@ extension-element-prefixes="date">
 <xsl:element name="a">
 <xsl:attribute name="class">more</xsl:attribute>
 <xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute><xsl:text>read more</xsl:text>
-<xsl:attribute name="aria-labelledby"><xsl:value-of select="title"/></xsl:attribute>
 <span class="accessiblity hide"><xsl:text> about </xsl:text><xsl:value-of select="title"/></span><xsl:text> </xsl:text> <i class="fa fa-caret-right"></i>
 </xsl:element>
 </p>
