@@ -11,14 +11,14 @@ dark blue:.....#002953
 body {
     line-height: 1.4;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 16px;
-    background-image: url("http://brand.unimelb.edu.au/web-templates/1-0-0/images/backgrounds/clouds.jpg");
+/*  background-image: url("http://brand.unimelb.edu.au/web-templates/1-0-0/images/backgrounds/clouds.jpg");
     background-position: center 60px !important;
-    background-repeat: repeat-x;
+    background-repeat: repeat-x; */
 }
 a.site-title {
-    color: #003366;
+    color: #fff;
     display: block;
     font-size: 2em;
     font-weight: 100;
@@ -30,7 +30,8 @@ a.site-title {
         color: #D30472;
     }
 .backdrop.blue {
-    background: none;
+    background: #036;
+    height: 150px;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Roboto', sans-serif;
@@ -57,9 +58,13 @@ h3 {
     color: #fff;
 }
 .col-sm-4 .inner {
-    text-align: center;
-    border: 1px solid #eee;
     height: 500px;
+}
+.inner h2, .inner i, .section-intro {
+	text-align: center;
+} 
+.inner ul {
+	padding-top: 20px;
 }
 /* @end */
 
@@ -495,7 +500,7 @@ ol.breadcrumb {
 /* ===== FOOTER ==== */
 footer {
     border-top: 1px solid #eee;
-    background-color: none;
+    background-color: #efefef;
     font-size: 0.90em;
     padding: 20px 0 40px 0px;
     margin-top: 40px;
@@ -549,6 +554,9 @@ dl.inline dd + dd {
 input#search {
     width: 350px;
     padding: 5px;
+}
+#footernav .wrapper {
+	max-width: 1180px;
 }
 #footernav #footernav-onesixty {
     left: 475px;
