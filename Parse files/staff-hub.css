@@ -321,6 +321,9 @@ footer #about {
 footer .about li {
     list-style: none;
 }
+footer dl {
+	color: #666;
+}
 dl.inline {
     display: table;
 }
@@ -786,6 +789,10 @@ form div.sq-backend-smallprint {
     background-color: #EAF0F4;
     border: none;
    }
+#hot.box h2 {
+	border-bottom: 1px solid #BCCBD6;
+    margin-bottom: 20px;
+}
 .content .news-intro {
 	padding-left: 0;
 }
@@ -802,12 +809,38 @@ body.content .jumbotron {
 }
 .news-summary .jumbotron {
 	background-color: #036;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
 }
-.news-summary .jumbotron p {
+.news-summary .jumbotron p, .news-summary .jumbotron h2 {
 	color: #fff;
 }
-.news-summary .jumbotron h2 {
-	color: #C0D0DB;
+.news-summary .uom-btn {
+	background-color: fff;
+	border: 1px solid #ccc;
+}
+.main .news-summary a {
+	color:  #fff;
+}
+.main .news-summary p a {
+	border-bottom: 1px dotted #ccc;
+}
+.news-summary a.more {
+	border-top: 1px solid #888;
+	border-bottom: none;
+	color: #FFFFFF;
+	display: block;
+	font-weight: 400;
+	padding-top: 10px;
+	text-transform: uppercase;
+	width: 100%;
+}
+a.more .fa {
+	padding-left: 5px;
 }
 /* @end */
 
@@ -937,6 +970,7 @@ body.content .jumbotron {
 	padding: 25px 0 15px 25px;
 	font-size: 1.2em;
 	font-weight: 400;
+	margin-bottom: 10px;
 }
 .hero-aside ul li {
 	background-image: none;
@@ -947,6 +981,7 @@ body.content .jumbotron {
 	border-bottom: 1px solid #BCCBD6;
 	padding: 10px 25px;
 	width: 100%;
+	line-height: 1.4em;
 }
 .hero-aside a:hover {
 	color: #012849;
@@ -1589,6 +1624,15 @@ body.content .jumbotron {
 	position: relative;
 	top: -320px;
 	padding: 0 15px;
+}
+.news-summary .jumbotron {
+	background-color: #036;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
 }
 .hero-aside {
 	min-height: 345px;

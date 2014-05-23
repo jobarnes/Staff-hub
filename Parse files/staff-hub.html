@@ -187,26 +187,31 @@
   <footer class="backdrop local" role="contentinfo">
    <div class="container">
    <div class="row">
-   <div class="footer-extras col-sm-8">
+   <div class="footer-extras col-sm-4">
    <MySource_AREA id_name="footer_extras" design_area="nest_content" cache="1"><MySource_SET name="type_codes" value="page" /></MySource_AREA>
    </div>
   
-   <div class="meta col-sm-4">
-   <h2>About this page</h2>
-   <dl class="auth-meta inline">
-   <dt>Maintainer</dt>
-   <dd class="cf"><a class="email" href="mailto:%asset_metadata_UM.Maintainer.Email%">%asset_metadata_UM.Maintainer.Name% <i class="fa fa-envelope-o"></i></a></dd>
-  
+   <div class="meta col-sm-8">
+   <div class="col-sm-3">
+   	   <dl class="auth-meta">
+	   <dt>Maintainer</dt>   
+	   <dd class="cf"><a class="email" href="mailto:%asset_metadata_UM.Maintainer.Email%">%asset_metadata_UM.Maintainer.Name% <i class="fa fa-envelope-o"></i></a></dd>
+   </div>
+   <div class="col-sm-3">  
    <dt>Authoriser</dt>
    <dd class="cf">%asset_metadata_UM.Authoriser.Title%</dd>
    </dl>
-  
-   <dl class="page-meta inline">
+   </div>
+   
+   <dl class="page-meta">
+   <div class="col-sm-3"> 
    <dt>Date created</dt>
    <dd>%asset_created_j% %asset_created_F% %asset_created_Y%</dd>
-  
+   </div> 
+   <div class="col-sm-3"> 
    <dt>Last modified</dt>
    <dd>%asset_updated_j% %asset_updated_F% %asset_updated_Y%</dd>
+   </div>
    </dl>
    </div><!-- /meta -->
    </div><!-- /row -->
