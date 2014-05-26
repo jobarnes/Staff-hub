@@ -80,13 +80,10 @@
                     <!-- not logged in -->
                  </MySource_LOGIN_SECTION>
                  <MySource_LOGOUT_SECTION>
-                    <MySource_PRINT var="form_open" />
-                 <span class="hello"><i class="fa fa-user"></i><span class="hidden-xs"> Hello 
-                    <MySource_PRINT id_name="__global__" var="current_user" default="[Not Logged In]" attr="name" /></span> 
-                 </span>
-                 <span class="goodbye">
-                    <a href="%globals_asset_url%/?SQ_ACTION=logout"><i class="fa fa-sign-out"></i> Log out</a></span>
-                    <MySource_PRINT var="form_close" />
+                 <MySource_PRINT var="form_open" />
+                 <span class="hello hidden-xs"><i class="fa fa-user"></i> Hello <MySource_PRINT id_name="__global__" var="current_user" default="[Not Logged In]" attr="name" /></span>
+                 <span class="goodbye"><a href="%globals_asset_url%/?SQ_ACTION=logout"><i class="fa fa-sign-out"></i> Log out</a></span>
+                 <MySource_PRINT var="form_close" />
                  </MySource_LOGOUT_SECTION>
              </MySource_AREA>
       </div>

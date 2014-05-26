@@ -56,6 +56,8 @@ h3 {
 .col-md-4 .inner {
 	margin-top: 40px;
     margin-bottom: 40px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 30px;
 }
 .public-home .section {
 	padding-top: 0; margin-top: 0;
@@ -789,6 +791,9 @@ a.site-title {
 .container.main {
     padding: 40px 0px 60px;
 }
+a.site-title {
+	padding-top: 0;
+}
 }
 
 @media screen and (max-width: 770px){
@@ -831,9 +836,6 @@ nav.container {
 .staff-hub .btn-uom {
 	margin-right: 6%;
 }
-.inner h2 {
-	margin-top: 0px;
-}
 .backdrop.blue {
     height: 140px;
 }
@@ -846,19 +848,29 @@ a.site-title {
 	padding-top: 20px;
 	padding-bottom: 60px;	
 }
-.public-home .section {
-	padding-top: 40px; margin-top: 0;
+}
+
+@media screen and (min-width: 770px) {
+.inner h2 {
+	margin-top: 20px;
 }
 }
 
 @media screen and (min-width: 990px) {
 .col-md-4 .inner {
-    padding-right: 25px;
+	border-bottom: none;
     margin-bottom: 40px;
     margin-top: 0px;
 }
-.inner h2 {
-	margin-top: 20px;
+.public-home .section {
+	padding-top: 40px; margin-top: 0;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.col-md-4 .inner {
+    padding-right: 25px;
+	padding-bottom: 0px;
 }
 }
 
