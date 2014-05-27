@@ -47,7 +47,7 @@ h4 {
     margin-top: 0;
 }
 body.content h1 {
-    padding-bottom: 1em;
+    padding-bottom: 0em;
 }
 /* @end */
 
@@ -105,7 +105,7 @@ ul.buttleft, .buttleft ul {
     padding-left: 0px;
 }
 .main ul li, .link-block li li {
-    background: url("https://its.unimelb.edu.au/__data/assets/image/0020/641171/arrow-tiny-grey.gif") no-repeat scroll 0 6px transparent;
+    background: url("//its.unimelb.edu.au/__data/assets/image/0020/641171/arrow-tiny-grey.gif") no-repeat scroll 0 6px transparent;
     list-style: none outside none;
     padding-left: 12px;
     padding-bottom: 0.5em;
@@ -224,7 +224,7 @@ a.site-title:hover {
 }
 .navbar-inverse .navbar-brand {
    color: #fff;
-   padding-top: 15px;
+/*    padding-top: 15px; */
 }
 .navbar-nav {
    margin-right: 0px;
@@ -233,12 +233,18 @@ a.site-title:hover {
    padding-left: 15px;
 }
 .navbar-header {
-   width: 80%;
+   width: 70%;
    float: left;
 }
 .navbar-right {
-   width: 20%;
+   width: 30%;
    float: right;
+   text-align: right;
+}
+.navbar-right .goodbye a {
+	padding-left: 20px;
+	color: #fff;
+	padding-top: 15px;
 }
 .navbar-right ul {
    float: right;
@@ -246,6 +252,15 @@ a.site-title:hover {
 .dropdown-toggle {
    float: right;
    margin-bottom: 18px;
+}
+.site-logo {
+	max-width: 320px;
+	position: relative;
+	left: -15px;
+} 
+.site-logo p {
+	background-color: #00457C;
+	padding: 10px 20px 5px;
 }
 /* .loginorout {
    padding-top: 15px;
@@ -804,6 +819,14 @@ body.content .jumbotron {
     font-weight: 300;
     line-height: 1.8em;
 }
+.feature-news .img-rounded {
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
 .news-summary {
     padding: 0;
 }
@@ -1167,7 +1190,14 @@ main .media {
 }
 .media .date {
     background: #036;
-    background: linear-gradient(to bottom, #606C88 0%, #3F4C6B 100%) repeat scroll 0 0 transparent;
+background: #2c5993; /* Old browsers */
+background: -moz-linear-gradient(top,  #2c5993 0%, #00457c 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c5993), color-stop(100%,#00457c)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #2c5993 0%,#00457c 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #2c5993 0%,#00457c 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #2c5993 0%,#00457c 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #2c5993 0%,#00457c 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c5993', endColorstr='#00457c',GradientType=0 ); /* IE6-9 */
     border-radius: 4px 4px 4px 4px;
     color: #FFFFFF;
     padding: 10px 15px;
@@ -1547,6 +1577,13 @@ main .list-2-col li {
 footer .meta {
     margin-top: 0px;
 }
+.site-logo {
+	top:  0px;
+	left: 0px;	
+}
+body.content h1 {
+    padding-bottom: 1em;
+}
 }
 
 @media screen and (min-width: 992px){
@@ -1619,14 +1656,23 @@ body.content .jumbotron {
 .feature-news {
     height:  390px;
 }
-.news-summary {
-    opacity: 0.9;
-    filter:alpha(opacity=90);
-    position: relative;
-    top: -320px;
-    padding: 0 15px;
+.feature-news .img-rounded {
+	-webkit-border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
 }
-.news-summary .jumbotron {
+.news-summary {
+	opacity: 0.9;
+	filter:alpha(opacity=90);
+	position: relative;
+	left: -15px;
+	top: -190px;
+	padding: 0 15px;
+}
+body .news-summary .jumbotron {
     background-color: #036;
     -webkit-border-top-left-radius: 6px;
     -webkit-border-top-right-radius: 6px;
@@ -1634,9 +1680,14 @@ body.content .jumbotron {
     -moz-border-radius-topright: 6px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    min-height: 100px;
 }
 .hero-aside {
     min-height: 345px;
+}
+.loginorout {
+	position: relative;
+	top: -5px;
 }
 }
 
@@ -1644,6 +1695,10 @@ body.content .jumbotron {
 /* .quicklinks i.fa {
     font-size: 3em;
 } */
+.news-summary {
+	top: -320px;
+	left: 15px;
+}
 }
 
 @media print{
