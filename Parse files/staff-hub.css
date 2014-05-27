@@ -202,6 +202,7 @@ a.site-title {
     line-height: 1.2em;
     margin-left: 0px;
     padding: 20px 0;
+    margin-top: 30px;
 }
 a.site-title:hover {
     text-decoration: none;
@@ -254,13 +255,15 @@ a.site-title:hover {
    margin-bottom: 18px;
 }
 .site-logo {
-	max-width: 320px;
+	max-width: 420px;
 	position: relative;
 	left: -15px;
 } 
 .site-logo p {
 	background-color: #00457C;
-	padding: 10px 20px 5px;
+	padding: 10px 20px 10px 5px;
+	position: relative;
+	top: -15px;
 }
 /* .loginorout {
    padding-top: 15px;
@@ -1546,6 +1549,7 @@ nav.container {
 a.site-title {
     padding: 0 0 50px;
     margin-left: 180px;
+    margin-top: 0px;
 }
 .navbar-right {
    width: 50%;
@@ -1654,7 +1658,10 @@ body.content .jumbotron {
     font-weight: 100;
 }
 .feature-news {
-    height:  390px;
+    height:  310px;
+}
+.hero-aside {
+    min-height: 284px;
 }
 .feature-news .img-rounded {
 	-webkit-border-bottom-right-radius: 6px;
@@ -1665,11 +1672,9 @@ body.content .jumbotron {
 	border-bottom-left-radius: 6px;
 }
 .news-summary {
-	opacity: 0.9;
-	filter:alpha(opacity=90);
 	position: relative;
 	left: -15px;
-	top: -190px;
+	top: -282px;
 	padding: 0 15px;
 }
 body .news-summary .jumbotron {
@@ -1680,10 +1685,8 @@ body .news-summary .jumbotron {
     -moz-border-radius-topright: 6px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    min-height: 100px;
-}
-.hero-aside {
-    min-height: 345px;
+    min-height: 282px;
+    min-width: 700px;
 }
 .loginorout {
 	position: relative;
@@ -1698,6 +1701,18 @@ body .news-summary .jumbotron {
 .news-summary {
 	top: -320px;
 	left: 15px;
+	opacity: 0.9;
+	filter:alpha(opacity=90);
+}
+.hero-aside {
+    min-height: 345px;
+}
+.feature-news {
+	height:  370px;
+}
+body .news-summary .jumbotron {
+	min-height: 100px;
+	min-width: auto;
 }
 }
 
