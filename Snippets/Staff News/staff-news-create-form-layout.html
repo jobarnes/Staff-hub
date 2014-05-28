@@ -1,6 +1,12 @@
 <div class="newnews">
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-7">
+<fieldset>
+  <legend>Select the issue(s) this item should appear in.</legend>
+  <div class="checkbox-inline">
+    %issues_field%
+  </div>
+</fieldset>
 <fieldset>
   <legend>Item Details</legend>
   <div class="form-group well">
@@ -11,12 +17,17 @@
   <div class="form-group">
     <label for="page_standard_0_378">Item title</label>
     %details-F_name%
-    <p class="help-block"><span id="count_975129">75</span> characters remaining.<br>Examples: <i title="Seminar" class="btn btn-default btn-xs">Seminar</i> <i title="Public Lecture" class="btn btn-default btn-xs">Public Lecture</i> <i title="Concert Series" class="btn btn-default btn-xs">Concert Series</i></p>
+    <p class="help-block"><span id="count_name">75</span> characters remaining.<br>Examples: <i title="Seminar" class="btn btn-default btn-xs">Seminar</i> <i title="Public Lecture" class="btn btn-default btn-xs">Public Lecture</i> <i title="Concert Series" class="btn btn-default btn-xs">Concert Series</i></p>
+  </div>
+  <div class="form-group whatson-only">
+    <label for="metadata_field_text_975126_value">Date</label>
+    <input type="text" name="metadata_field_text_975126_value" value="" size="30" class="sq-form-field form-control" id="metadata_field_text_975126_value">
+    <p class="help-block ">Click for examples: <i title="%globals_date_l% %globals_date_j% %globals_date_F% %globals_date_g%.%globals_date_i%%globals_date_a%" class="btn btn-default btn-xs">Single day and time</i> <i title="%globals_date_l% %globals_date_j% %globals_date_F% 11.00am - 12.30pm" class="btn btn-default btn-xs">Single day with start and finish time</i> <i title="Monday 10 December 11.00am - Friday 14 December 3.00pm" class="btn btn-default btn-xs">Multiple days</i></p>
   </div>
   <div class="form-group whatson-only">
     <label for="metadata_field_text_975129_value">Optional event name</label>
     %metadata-F_975129%
-    <p class="help-block"><span id="count_name">50</span> characters remaining.</p>
+    <p class="help-block"><span id="count_975129">50</span> characters remaining.</p>
   </div>
   <div class="form-group">
     <label for="metadata_field_text_975124_value">Item content</label>
@@ -26,24 +37,17 @@
 </fieldset>
 <fieldset class="story-only">
   <legend>Extra story details</legend>
-
-  <div class="form-group">
-    <label for="metadata_field_text_975077_value">Source</label>
-    %metadata-F_975077%
-  </div>
   <div class="form-group">
     <label for="metadata_field_text_975078_value">HREC</label>
     %metadata-F_975078%
   </div>
-
+  <div class="form-group">
+    <label for="metadata_field_text_975077_value">Source</label>
+    %metadata-F_975077%
+  </div>
 </fieldset>
 <fieldset class="whatson-only" style="display: block;">
   <legend>Extra what's on details</legend>
-  <div class="form-group">
-    <label for="metadata_field_text_975126_value">Date</label>
-    <input type="text" name="metadata_field_text_975126_value" value="" size="30" class="sq-form-field form-control" id="metadata_field_text_975126_value">
-    <p class="help-block ">Click for examples: <i title="%globals_date_l% %globals_date_j% %globals_date_F% %globals_date_g%.%globals_date_i%%globals_date_a%" class="btn btn-default btn-xs">Single day and time</i> <i title="%globals_date_l% %globals_date_j% %globals_date_F% 11.00am - 12.30pm" class="btn btn-default btn-xs">Single day with start and finish time</i> <i title="Monday 10 December 11.00am - Friday 14 December 3.00pm" class="btn btn-default btn-xs">Multiple days</i></p>
-  </div>
   <div class="form-group">
     <label for="metadata_field_text_975072_value">Presenter</label>
     <input type="text" name="metadata_field_text_975072_value" value="" size="30" class="sq-form-field form-control" id="metadata_field_text_975072_value">
@@ -51,14 +55,6 @@
   <div class="form-group">
     <label for="metadata_field_text_975117_value">Venue</label>
     <input type="text" name="metadata_field_text_975117_value" value="" size="30" class="sq-form-field form-control" id="metadata_field_text_975117_value">
-  </div>
-</fieldset>
-</div>
-<div class="col-md-6">
-<fieldset>
-  <legend>Select the issue(s) this item should appear in.</legend>
-  <div class="checkbox-inline">
-    %issues_field%
   </div>
 </fieldset>
 <fieldset>
@@ -84,6 +80,9 @@
   </div>
  </div>
 </fieldset>
+</div>
+<div class="col-md-5">
+<div class="preview"></div>
 </div>
 </div>
 %commit_button_clean%
