@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<xsl:stylesheet version="1.0" 
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-	xmlns:date="http://exslt.org/dates-and-times" 
-	extension-element-prefixes="date">
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+xmlns:date="http://exslt.org/dates-and-times"
+extension-element-prefixes="date">
  
   <xsl:output media-type="text/html" indent="yes" encoding="utf-8" method="html"/>
 
@@ -17,14 +17,29 @@
 
  
   <xsl:template match="api-v1-entities-event-item">
-    <li class="event-list-item event">
-	<div class="date"><xsl:apply-templates select="start-time" /></div>
-	<div class="event-details inner">
-		<xsl:element name="a">
-		<xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute>
-		<span class="title"><xsl:value-of select="title" /></span>
-		</xsl:element>
-	</div>
+    <li class="event-list-item row event media">
+<div class="date"><xsl:apply-templates select="start-time" /></div>
+<div class="event-details inner">
+<xsl:element name="a">
+<xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute>
+<xsl:element name="h3">
+<xsl:attribute name="id">e<xsl:value-of select="id"/></xsl:attribute>
+<xsl:attribute name="class">title</xsl:attribute>
+<xsl:value-of select="title" />
+</xsl:element>
+</xsl:element>
+
+<p class="summary"><xsl:value-of select="substring(description, 0, 200)"/>
+<xsl:text disable-output-escaping="yes">...</xsl:text></p>
+<p>
+<xsl:element name="a">
+<xsl:attribute name="class">more</xsl:attribute>
+<xsl:attribute name="aria-labelledby">e<xsl:value-of select="id"/></xsl:attribute>
+<xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute><xsl:text>read more</xsl:text>
+<xsl:text> </xsl:text><i class="fa fa-caret-right"></i>
+</xsl:element>
+</p>
+</div>
     </li>
   </xsl:template>
  
@@ -38,12 +53,6 @@
       <span class="month"><xsl:value-of select="date:month-abbreviation($date)" /></span>
       <xsl:text> </xsl:text>
       <span class="year"><xsl:value-of select="date:year($date)" /></span>
-      <xsl:text>, </xsl:text>
-      <span class="hour"><xsl:value-of select="date:hour-in-day($time)" /></span>
-      <xsl:text>:</xsl:text>
-      <span class="minute"><xsl:value-of select="date:minute-in-hour($time)" /></span> 
-	  <xsl:text>, </xsl:text>
-	  <span class="hour"><xsl:value-of select="xs:time($time)" /></span>      
     </xsl:element>
   </xsl:template>
  
