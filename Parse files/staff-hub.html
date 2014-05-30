@@ -66,48 +66,25 @@
 
 <div class="navbar navbar-inverse" role="navigation">
       <div class="container">
-      <div class="main-nav-dd dropdown hidden">
-         <!-- Toggle button for menu, you can place it anywhere -->
-         <div class="menu-toggle-button" data-menu-id="main-nav">
-         <i class="fa fa-bars"></i></div>
-      </div> 
-      
         <div class="navbar-header">
           <a href="//unimelb.edu.au" title="Return to homepage" class="site-logo navbar-brand">
-              <p class="visible-xs">University of Melbourne</p>
-              <img src="//cms.unimelb.edu.au/staff/intranet/library/images/interface/uom-v.jpg" alt="University of Melbourne" class="logo hidden-xs" />
+              <img src="//cms.unimelb.edu.au/staff/intranet/library/images/interface/uom-v.jpg" alt="University of Melbourne" class="logo" />
           </a>
         </div>
-        <div class="navbar-right">
-            <ul class="nav navbar-nav">
-                <li class="loginorout dropdown">
+        <div class="navbar-right loginorout">
             <MySource_AREA id_name="logout_box" design_area="login_form">
                  <MySource_LOGIN_SECTION>
-                 <li>
-                  <a class="dropdown-toggle login" data-toggle="dropdown" href="%globals_asset_url%/_login">
+                  <a class="login" href="%globals_asset_url%/_login">
                   <i class="fa fa-signin"></i> Login</a> 
-                  <b class="caret"></b>
-                  </li>
                     <!-- not logged in -->
                  </MySource_LOGIN_SECTION>
                  <MySource_LOGOUT_SECTION>
-                    <MySource_PRINT var="form_open" />
-                 <li class="hello dropdown-toggle clearfix" data-toggle="dropdown">
-                  <i class="fa fa-user"></i><span class="hidden-xs"> Hello 
-                    <MySource_PRINT id_name="__global__" var="current_user" default="[Not Logged In]" attr="name" /></span> 
-                  <b class="caret"></b>
-                  </li>
-                    <ul class="dropdown-menu">
-                    <li class="goodbye">
-                    <a href="%globals_asset_url%/?SQ_ACTION=logout"><i class="fa fa-sign-out"></i> Log out</a>
-                    </li>
-                    </ul>
-                    <MySource_PRINT var="form_close" />
+                 <MySource_PRINT var="form_open" />
+                 <span class="hello hidden-xs"><i class="fa fa-user"></i> Hello <MySource_PRINT id_name="__global__" var="current_user" default="[Not Logged In]" attr="name" /></span>
+                 <span class="goodbye"><a href="%globals_asset_url:1022685%?SQ_ACTION=logout&end_url=%globals_asset_url^urlencode%"><i class="fa fa-sign-out"></i> Log out</a></span>
+                 <MySource_PRINT var="form_close" />
                  </MySource_LOGOUT_SECTION>
              </MySource_AREA>
-             </li>
-            </ul>
-        </div><!--/.navbar-collapse -->
       </div>
     </div>
 </div>
@@ -192,32 +169,27 @@
    </div>
   
    <div class="meta col-sm-8">
-   <div class="col-sm-3">
-<<<<<<< HEAD
-          <dl class="auth-meta">
+   <dl class="auth-meta">
+   <span class="col-sm-3">
        <dt>Maintainer</dt>   
        <dd class="cf"><a class="email" href="mailto:%asset_metadata_UM.Maintainer.Email%">%asset_metadata_UM.Maintainer.Name% <i class="fa fa-envelope-o"></i></a></dd>
-=======
-   	   <dl class="auth-meta">
-	   <dt>Maintainer</dt>   
-	   <dd class="cf"><a class="email" href="mailto:%asset_metadata_UM.Maintainer.Email%">%asset_metadata_UM.Maintainer.Name% <i class="fa fa-envelope-o"></i></a></dd>
->>>>>>> FETCH_HEAD
-   </div>
-   <div class="col-sm-3">  
-   <dt>Authoriser</dt>
-   <dd class="cf">%asset_metadata_UM.Authoriser.Title%</dd>
+   </span>
+   <span class="col-sm-3">  
+       <dt>Authoriser</dt>
+       <dd class="cf">%asset_metadata_UM.Authoriser.Title%</dd>
+   </span>
    </dl>
-   </div>
+
    
    <dl class="page-meta">
-   <div class="col-sm-3"> 
-   <dt>Date created</dt>
-   <dd>%asset_created_j% %asset_created_F% %asset_created_Y%</dd>
-   </div> 
-   <div class="col-sm-3"> 
-   <dt>Last modified</dt>
-   <dd>%asset_updated_j% %asset_updated_F% %asset_updated_Y%</dd>
-   </div>
+   <span class="col-sm-3"> 
+       <dt>Date created</dt>
+       <dd>%asset_created_j% %asset_created_F% %asset_created_Y%</dd>
+   </span> 
+   <span class="col-sm-3"> 
+       <dt>Last modified</dt>
+       <dd>%asset_updated_j% %asset_updated_F% %asset_updated_Y%</dd>
+   </span>
    </dl>
    </div><!-- /meta -->
    </div><!-- /row -->

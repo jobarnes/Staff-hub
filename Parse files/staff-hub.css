@@ -189,20 +189,20 @@ img.alignleft {
 
 /* @group Header */ /* ============================================================ Header */
 header {
-    padding-top: 20px;
-}
-img.logo {
+    padding-bottom: 20px;
+} 
+/* img.logo {
     display: none;
-}
+} */
 a.site-title {
     color: #036;
     display: block;
     font-size: 3em;
     font-weight: 100;
     line-height: 1.2em;
-    margin-left: 0px;
+    margin-left: 160px;
     padding: 20px 0;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 a.site-title:hover {
     text-decoration: none;
@@ -258,6 +258,7 @@ a.site-title:hover {
 	max-width: 300px;
 	position: relative;
 	left: -15px;
+	top:  -15px;
 } 
 .site-logo p {
 	background-color: #00457C;
@@ -322,6 +323,7 @@ footer.local {
     padding: 40px 0px;
     position: relative;
     z-index: 100;
+    text-align: center;
 }
 footer h2 {
     font-size: 1.2em;
@@ -334,13 +336,14 @@ footer ul {
     padding-left: 0px;
 }
 footer #about {
-    padding-top: 4em;
+    padding-top: 2em;
 }
 footer .about li {
     list-style: none;
 }
 footer dl {
     color: #666;
+    display: block;
 }
 dl.inline {
     display: table;
@@ -569,7 +572,28 @@ a.more {
 .btn-primary:hover {
     background-color: #356FA1;
 }
-
+.btn-feedback {
+	color: #fff;
+	background: #db7800; /* Old browsers */
+	background: -moz-linear-gradient(top,  #db7800 1%, #cf4c00 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#db7800), color-stop(99%,#cf4c00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #db7800 1%,#cf4c00 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #db7800 1%,#cf4c00 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #db7800 1%,#cf4c00 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #db7800 1%,#cf4c00 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db7800', endColorstr='#cf4c00',GradientType=0 ); /* IE6-9 */
+}
+.btn-feedback:hover	{
+	color: #fff;
+	background: #cf4c00; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cf4c00 1%, #db7800 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#cf4c00), color-stop(99%,#db7800)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cf4c00 1%,#db7800 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cf4c00 1%,#db7800 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cf4c00 1%,#db7800 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cf4c00 1%,#db7800 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf4c00', endColorstr='#db7800',GradientType=0 ); /* IE6-9 */
+}
 main a.btn {
     border-bottom: 1px solid #ccc;
 }
@@ -836,7 +860,7 @@ body.content .jumbotron {
     padding: 0;
 }
 .news-summary .jumbotron {
-    background-color: #036;
+    background-color: #206793;
     -webkit-border-top-left-radius: 0px;
     -webkit-border-top-right-radius: 0px;
     -moz-border-radius-topleft: 0px;
@@ -1542,11 +1566,22 @@ nav.container {
 .navbar-nav {
     padding-top: 7.5px;
 }
+img.logo {
+	width: 120px;
+}
+a.site-title {
+    margin-left: 120px;
+    padding: 10px 0;
+}
 }
 
 @media screen and (min-width:768px){
 .navbar-inverse .navbar-brand {
     padding-top: 0px;
+} 
+header {
+	padding-top: 20px;
+    padding-bottom: 0px;
 } 
 a.site-title {
     padding: 0 0 50px;
@@ -1589,6 +1624,12 @@ footer .meta {
 }
 body.content h1 {
     padding-bottom: 1em;
+}
+footer.local {
+	text-align: left;
+}
+footer dl {
+	display: inline;
 }
 }
 
@@ -1674,21 +1715,21 @@ body.content .jumbotron {
 	border-bottom-left-radius: 6px;
 }
 .news-summary {
-	position: relative;
-	left: -15px;
-	top: -282px;
+	left: 10px;
 	padding: 0 15px;
+	position: relative;
+	top: -257px;
+	opacity: 0.9;
+	filter:alpha(opacity=90);
 }
 body .news-summary .jumbotron {
-    background-color: #036;
+    background-color: #206793;
     -webkit-border-top-left-radius: 6px;
     -webkit-border-top-right-radius: 6px;
     -moz-border-radius-topleft: 6px;
     -moz-border-radius-topright: 6px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    min-height: 282px;
-    min-width: 700px;
 }
 .loginorout {
 	position: relative;
@@ -1703,8 +1744,6 @@ body .news-summary .jumbotron {
 .news-summary {
 	top: -320px;
 	left: 15px;
-	opacity: 0.9;
-	filter:alpha(opacity=90);
 }
 .hero-aside {
     min-height: 345px;
