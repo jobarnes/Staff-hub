@@ -105,7 +105,7 @@ ul.buttleft, .buttleft ul {
     padding-left: 0px;
 }
 .main ul li, .link-block li li {
-    background: url("//its.unimelb.edu.au/__data/assets/image/0020/641171/arrow-tiny-grey.gif") no-repeat scroll 0 6px transparent;
+    background: url("mysource_files/tiny-grey-arow.png") no-repeat scroll 0 6px transparent;
     list-style: none outside none;
     padding-left: 12px;
     padding-bottom: 0.5em;
@@ -192,17 +192,19 @@ header {
     padding-top: 20px;
 }
 img.logo {
-    display: none;
-}
+    left:  0;
+    top:  0;
+} 
 a.site-title {
     color: #036;
     display: block;
-    font-size: 3em;
-    font-weight: 100;
+    font-size: 2em;
+    font-weight: 300;
     line-height: 1.2em;
-    margin-left: 0px;
+    margin:  0 0 0 140px;
     padding: 20px 0;
-    margin-top: 30px;
+    position: relative;
+    top: -25px;
 }
 a.site-title:hover {
     text-decoration: none;
@@ -226,6 +228,13 @@ a.site-title:hover {
 .navbar-inverse .navbar-brand {
    color: #fff;
 /*    padding-top: 15px; */
+}
+img.logo {
+    display: block;
+    max-width: 130px;
+    left: -15px;
+    position: relative;
+    top: -15px;
 }
 .navbar-nav {
    margin-right: 0px;
@@ -257,13 +266,13 @@ a.site-title:hover {
 .site-logo {
     max-width: 300px;
     position: relative;
-    left: -15px;
+/*     left: -15px; */
 } 
 .site-logo p {
     background-color: #00457C;
     padding: 10px 20px 10px 5px;
     position: relative;
-    top: -15px;
+/*    top: -15px; */
 }
 /* .loginorout {
    padding-top: 15px;
@@ -570,7 +579,7 @@ a.more {
     font-size: 0.9em;
 }
 .box .fa-caret-right {
-    color: #bbb;
+    color: #888;
     padding-left: 5px;
     font-size: 1.1em;
     position: relative;
@@ -986,7 +995,7 @@ a.more .fa {
     background-color: #BA610D;
     color: #DDB086;
 }
-.quicklinks i.fa-map-marker {
+.quicklinks i.fa-graduation-cap {
     background-color: #C7A500;
     color: #E2D07A;
 }
@@ -994,7 +1003,7 @@ a.more .fa {
     background-color: #7F9B2A;
     color: #BFCD95;
 }
-.quicklinks i.fa-plane {
+.quicklinks i.fa-wrench {
     background-color: #00865D;
     color: #80C3AE;
 }
@@ -1264,6 +1273,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c5993', end
 .main ul.event-list li.event-list-item {
     background: none;
     padding-left: 0;
+}
+body .event-list a{
+    border-bottom: none;
 }
 .a973389 .list-2-col .title a {
     color: #485A79;
@@ -1582,9 +1594,10 @@ tr.gsc-completion-selected .gsc-completion-snippet {
 /* .navbar p {
     display: none;
 } */
-img.logo {
-    display: block;
-}
+.navbar-inverse .navbar-brand {
+    padding-top: 0px;
+    padding-left: 0px;
+} 
 .quicklinks {
     padding-right: 0px;
 }
@@ -1594,6 +1607,19 @@ img.logo {
 nav.container {
     padding: 0px 15px;
 } 
+a.site-title {
+    padding: 0 0 30px;
+    margin-left: 160px;
+    margin-top: 30px;
+    font-size: 3em;
+    font-weight: 100;
+    top: -35px;
+}
+img.logo {
+    max-width: 180px;
+    left: 0px;
+    top:  0px;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -1619,17 +1645,17 @@ footer .meta dl {
 }
 
 @media screen and (min-width:768px){
-.navbar-inverse .navbar-brand {
-    padding-top: 0px;
-} 
-a.site-title {
+/* a.site-title {
     padding: 0 0 50px;
     margin-left: 180px;
     margin-top: 0px;
-}
+} */
 .navbar-right {
    width: 50%;
 }
+.navbar-inverse .navbar-brand {
+    padding-left: 15px;
+} 
 main .news-articles .article {
     padding-bottom: 0px;
 }
@@ -1657,12 +1683,11 @@ main .list-2-col li {
 footer .meta {
     margin-top: 0px;
 }
-.site-logo {
-    top:  0px;
-    left: 0px;    
-}
 body.content h1 {
     padding-bottom: 1em;
+}
+a.site-title {
+    margin-left: 175px;
 }
 }
 
@@ -1760,10 +1785,10 @@ body.content .jumbotron {
     padding: 0 15px; */
 }
 .a973389 .news-summary {
-    top: -305px;
+    top: -245px;
 }
 body .news-summary .jumbotron {
-    background-color: #036;
+    background-color: #206793;
     -webkit-border-top-left-radius: 6px;
     -webkit-border-top-right-radius: 6px;
     -moz-border-radius-topleft: 6px;
@@ -1778,7 +1803,10 @@ body .news-summary .jumbotron {
     top: -5px;
 }
 .people-search .col-xs-9 {
-    width: 90%;
+    width: 80%;
+}
+.home .jumbotron {
+    min-height: 480px;
 }
 }
 
@@ -1789,6 +1817,9 @@ body .news-summary .jumbotron {
 .news-summary {
     top: -320px;
     left: 15px;
+}
+.a973389 .news-summary {
+    top: -305px;
 }
 .hero-aside {
     min-height: 345px;
@@ -1802,6 +1833,13 @@ body .news-summary .jumbotron {
 }
 .people-search .col-xs-9 {
     width: 85%;
+}
+.home .jumbotron h1 {
+    font-size: 54px;
+}
+.home .jumbotron p {
+    font-size:  24px;
+    line-height: 1.5em;
 }
 }
 
