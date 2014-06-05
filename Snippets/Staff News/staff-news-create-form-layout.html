@@ -2,20 +2,20 @@
 <div class="row">
 <div class="col-md-7">
 <fieldset>
-  <legend>Select the issue(s) this item should appear in.</legend>
-  <div class="checkbox-inline">
+  <legend>Select the <i>first</i> issue/subsection this item should appear in. <b class="required" title="Required">*</b></legend>
+  <div class="radio">
     %issues_field%
   </div>
 </fieldset>
 <fieldset>
   <legend>Item Details</legend>
-  <div class="form-group well">
+
     <label for="metadata_field_select_975143">Item type</label>
     %metadata-F_975143%
-    <p class="help-block">First, select the type of item you are submitting.</p>
-  </div>
+    <p class="help-block">Also, select the type of item you are submitting.</p>
+
   <div class="form-group">
-    <label for="page_standard_0_378">Item title</label>
+    <label for="page_standard_0_378">Item title <b class="required" title="Required">*</b></label>
     %details-F_name%
     <p class="help-block"><span id="count_name">75</span> characters remaining.<br>Examples: <i title="Seminar" class="btn btn-default btn-xs">Seminar</i> <i title="Public Lecture" class="btn btn-default btn-xs">Public Lecture</i> <i title="Concert Series" class="btn btn-default btn-xs">Concert Series</i></p>
   </div>
@@ -78,6 +78,12 @@
     %metadata-F_975077%
     <p class="help-block">Examples: <i title="%globals_user_attribute_first_name% %globals_user_attribute_last_name%, Department Name" class="btn btn-default btn-xs">%globals_user_attribute_first_name% %globals_user_attribute_last_name%, Department Name</i></p>
   </div>
+</fieldset>
+<fieldset>
+  <legend>Anything else?</legend>
+  <label for="metadata_field_text_1040446_value">Notes</label>
+  %metadata-F_1040446%
+  <p class="help-block">Examples: <i title="Please repeat in next issue" class="btn btn-default btn-xs">Please repeat in next issue</i></p>
 </fieldset>
 </div>
 <div class="col-md-5">
