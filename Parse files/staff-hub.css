@@ -192,8 +192,13 @@ header {
     padding-top: 20px;
 }
 img.logo {
+<<<<<<< HEAD
     left:  0;
     top:  0;
+=======
+	left:  0;
+	top:  0;
+>>>>>>> FETCH_HEAD
 } 
 a.site-title {
     color: #036;
@@ -227,14 +232,21 @@ a.site-title:hover {
 }
 .navbar-inverse .navbar-brand {
    color: #fff;
+   padding:  0;
 /*    padding-top: 15px; */
 }
 img.logo {
     display: block;
     max-width: 130px;
+<<<<<<< HEAD
     left: -15px;
     position: relative;
     top: -15px;
+=======
+}
+a.site-title {
+	margin-right: 140px;
+>>>>>>> FETCH_HEAD
 }
 .navbar-nav {
    margin-right: 0px;
@@ -1608,6 +1620,7 @@ nav.container {
     padding: 0px 15px;
 } 
 a.site-title {
+<<<<<<< HEAD
     padding: 0 0 30px;
     margin-left: 160px;
     margin-top: 30px;
@@ -1619,6 +1632,14 @@ img.logo {
     max-width: 180px;
     left: 0px;
     top:  0px;
+=======
+    padding: 0 0 50px;
+    margin-left: 180px;
+    margin-top: 0px;
+}
+img.logo {
+    max-width: 180px;
+>>>>>>> FETCH_HEAD
 }
 }
 
@@ -1805,7 +1826,11 @@ body .news-summary .jumbotron {
 .people-search .col-xs-9 {
     width: 80%;
 }
+<<<<<<< HEAD
 .home .jumbotron {
+=======
+.a958559 .jumbotron {
+>>>>>>> FETCH_HEAD
     min-height: 480px;
 }
 }
