@@ -1,0 +1,81 @@
+<script>
+
+function pagescript(){
+// add the bootstrap classes for style
+  $('.newnews input[type=text]').addClass('form-control');
+  $('.newnews select').addClass('form-control');
+  $('.newnews textarea').addClass('form-control');
+// set defaults
+  $('#metadata_field_text_975124_value').attr('maxlength','500');
+  $('#metadata_field_text_975129_value').attr('maxlength','50');
+  $('#page_standard_0_378').attr('maxlength','75');
+  $('.whatson-only').hide();
+// changes between whats on and others  
+$('#metadata_field_select_975143').change(function(){
+  var sel = $('#metadata_field_select_975143 option:selected').val();
+  if (sel=="Whats on") {
+    $('#metadata_field_text_975124_value').attr('rows','4');
+    $('#metadata_field_text_975124_value').attr('maxlength','250');
+    $('#count_975124').text('200');
+    $('.whatson-only').show();
+    $('.story-only').hide();
+  }else{
+    $('#metadata_field_text_975124_value').attr('rows','7');
+    $('#metadata_field_text_975124_value').attr('maxlength','500');
+    $('#count_975124').text('500');
+    $('.story-only').show();
+    $('.whatson-only').hide();
+  }
+  var selclass = sel.toLowerCase();
+  $('#page_asset_builder_975087').addClass(selclass);
+});
+
+// defaults for new issue folder form
+var thisNum = $("#last-issue").text();
+thisNum++;
+$('#folder_0_210').val(thisNum);
+var lastDate = $("#last-issue-date").text();
+var thisDate = moment(lastDate, "DD-MMM").add('days', 7).format("D MMMM YYYY");
+var thisClose = moment(lastDate, "DD-MMM").add('days', 5).format("D MMMM YYYY");
+$('#metadata_field_text_1020784_value').val(thisDate);
+$('#metadata_field_text_1020785_value').val(thisClose);
+
+// autolinks URLs in stories
+var myTextEl = document.getElementById( 'main-content' );
+myTextEl.innerHTML = Autolinker.link( myTextEl.innerHTML, { newWindow: false } );
+
+// ** end of onload scripts
+}
+
+// Character counter
+CharacterCount = function(TextArea,FieldToCount){
+  var myField = document.getElementById(TextArea);
+  var myLabel = document.getElementById(FieldToCount); 
+  if(!myField || !myLabel){return false}; // catches errors
+  var MaxChars =  myField.maxLength;
+  if(!MaxChars){MaxChars =  myField.getAttribute('maxlength') ; }; if(!MaxChars){return false};
+  var remainingChars =   MaxChars - myField.value.length;
+  myLabel.innerHTML = remainingChars;
+}
+// Character counter setup!!
+setInterval(function(){CharacterCount('page_standard_0_378','count_name')},55);
+setInterval(function(){CharacterCount('metadata_field_text_975129_value','count_975129')},55);
+setInterval(function(){CharacterCount('metadata_field_text_975124_value','count_975124')},55);
+
+// ** auto populate text fields
+$('.help-block i').css('cursor','pointer');
+$('.help-block i').click(function() {
+  var text = $( this ).attr('title');
+  $(this).parent().prev().val( text );
+});
+</script>
+
+<script src="./?a=1020990"></script> <!-- moment.js -->
+<script src="./?a=1045847"></script> <!-- autolinker.js -->
+<!-- <script src="./?a=1017142"></script>combined and minified scripts -->
+
+<script>
+jQuery(document).ready(function($){
+    pagescript(); // call a function for anything unique to the page
+});
+</script>
