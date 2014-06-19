@@ -9,25 +9,61 @@ function pagescript(){
   $('#metadata_field_text_975124_value').attr('maxlength','500');
   $('#metadata_field_text_975129_value').attr('maxlength','50');
   $('#page_standard_0_378').attr('maxlength','75');
-  $('.whatson-only').hide();
+  $('.whatson').hide();
+  $('.training').hide();
+  $('.grants').hide();
+  $('.study').hide();
+  $('.corporate').show();
+// organise the issue selector area
+  $('.dest label:first-of-type').append(' : (Next Issue)');
+  $('.dest label:nth-of-type(3n)').append('<br>');
+  $('.dest label:nth-of-type(3n+1)').append(' : News of Interest');
+
 // changes between whats on and others  
 $('#metadata_field_select_975143').change(function(){
   var sel = $('#metadata_field_select_975143 option:selected').val();
+  if (sel=="Corporate Announcement") {
+    $('.training').hide();
+    $('.grants').hide();
+    $('.study').hide();
+    $('.whatson').hide();
+    $('.corporate').show();
+  }
+  if (sel=="Training and Development") {
+    $('.corporate').hide();
+    $('.grants').hide();
+    $('.study').hide();
+    $('.whatson').hide();
+    $('.training').show();
+  }
+  if (sel=="Grants and Funding") {
+    $('.training').hide();
+    $('.corporate').hide();
+    $('.study').hide();
+    $('.whatson').hide();
+    $('.grants').show();
+  }
+  if (sel=="Study Participants") {
+    $('.corporate').hide();
+    $('.grants').hide();
+    $('.training').hide();
+    $('.whatson').hide();
+    $('.study').show();
+  }
   if (sel=="Whats on") {
     $('#metadata_field_text_975124_value').attr('rows','4');
     $('#metadata_field_text_975124_value').attr('maxlength','250');
     $('#count_975124').text('200');
-    $('.whatson-only').show();
-    $('.story-only').hide();
+    $('.whatson').show();
+    $('.corporate').hide();
+    $('.grants').hide();
+    $('.training').hide();
+    $('.study').hide();
   }else{
     $('#metadata_field_text_975124_value').attr('rows','7');
     $('#metadata_field_text_975124_value').attr('maxlength','500');
     $('#count_975124').text('500');
-    $('.story-only').show();
-    $('.whatson-only').hide();
   }
-  var selclass = sel.toLowerCase();
-  $('#page_asset_builder_975087').addClass(selclass);
 });
 
 // defaults for new issue folder form
@@ -40,8 +76,9 @@ var thisClose = moment(lastDate, "DD-MMM").add('days', 5).format("D MMMM YYYY");
 $('#metadata_field_text_1020784_value').val(thisDate);
 $('#metadata_field_text_1020785_value').val(thisClose);
 
+
 // autolinks URLs in stories
-var myTextEl = document.getElementById( 'main-content' );
+var myTextEl = document.getElementById( 'sn-story-listing' );
 myTextEl.innerHTML = Autolinker.link( myTextEl.innerHTML, { newWindow: false } );
 
 // ** end of onload scripts
