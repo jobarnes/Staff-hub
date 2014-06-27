@@ -312,6 +312,10 @@ ul.menu-list li{
 ul.menu-list li a {
 	display:inline-block;
 }
+ul.menu-list li a:hover {
+	background-color: #2D6098;
+	color: #fff;
+}
 ul.menu-list li a {
 	display:block;
 }
@@ -386,7 +390,7 @@ ul.menu-list li li li>a{} /* Level 3 */
 /* First Level*/
 ul.menu-list>li{
 	margin:0px 5px 0px 0px;
-	border:none;
+	border-top: 1px solid #eee;
 }
 ul.menu-list>li>a{
 	background:  #fff;
@@ -1146,9 +1150,6 @@ footer .meta {
 footer .meta dl {
     margin-top: 20px;
 }
-.col-xs-7 {
-    width: 90%;
-}
 
 /* @group DaisyNav */
 /* DaisyNav Menu Styles */
@@ -1167,12 +1168,12 @@ ul.menu-list li{
 	float:none;
 }
 
+
 /* Handling Submenu */
 ul.menu-list ul{
 	display:none;
 	position:relative;
 }
-ul.menu-list ul li{}
 ul.menu-list ul ul {
 	position:relative;
 	top:100%;
@@ -1199,9 +1200,8 @@ ul.menu-list li.has-submenu>a>span.menu-expand{
 	right:0;
 	top:3px;
 	z-index: 700;
-} /* All levels */
-ul.menu-list>li.has-submenu>a>span.menu-expand{} /* Level 1 */
-ul.menu-list li li.has-submenu>a>span.menu-expand{} /* Level 2 */
+} 
+/* All levels */
 ul.menu-list li li.has-submenu>a>span.menu-expand:after{content:'\25BC';} /* Level 2 */
 
 /* You can manage with of elements by width of a-tag */
@@ -1216,13 +1216,15 @@ ul.menu-list li li>a {
 	width:auto;
 } 
 /* Level 2 */
-ul.menu-list li li li>a{} /* Level 3 */
+ul.menu-list li li li>a{} 
+/* Level 3 */
+ul.menu-list li li li>a{
+	background:  #eee;
+} 
 
 /* First Level*/
 ul.menu-list>li{
 	margin:0px;
-	border:none;
-	border-bottom:1px solid #002953;
 }
 ul.menu-list>li>a{}
 ul.menu-list>li:hover{background:#eee;}
@@ -1235,9 +1237,9 @@ ul.menu-list li a {
 
 /* Second Level*/
 ul.menu-list>li>ul{border:none;}
-ul.menu-list>li>ul>li{padding-left:5px;}
-ul.menu-list>li>ul>li>a{}
-ul.menu-list>li>ul>li:hover{background:#ccc;}
+ul.menu-list>li>ul>li{}
+ul.menu-list>li>ul>li>a{background:  #f2f2f2;}
+ul.menu-list>li>ul>li:hover{}
 ul.menu-list>li>ul>li:hover>a{}
 ul.menu-list>li>ul>li>a:hover{}
 /* End Second Level*/
@@ -1245,8 +1247,8 @@ ul.menu-list>li>ul>li>a:hover{}
 /* Third Level*/
 ul.menu-list>li>ul>li>ul{border:none;}
 ul.menu-list>li>ul>li>ul>li{padding-left:5px;}
-ul.menu-list>li>ul>li>ul>li>a{}
-ul.menu-list>li>ul>li>ul>li:hover{background:#ddd;}
+ul.menu-list>li>ul>li>ul>li>a{background: #efefef;}
+ul.menu-list>li>ul>li>ul>li:hover{}
 ul.menu-list>li>ul>li>ul>li:hover>a{}
 ul.menu-list>li>ul>li>ul>li>a:hover{}
 /* End Third Level*/
