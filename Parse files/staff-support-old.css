@@ -278,93 +278,93 @@ img.logo {
 /* @group Daisy Nav */ /* =================================================== Daisy Nav */
 
 .nav-frame {
-    display: block;
-    border-bottom: 1px solid #eee;
+	display: block;
+	border-bottom: 1px solid #eee;
 }
 
 /* Init Logic */
 .menu-toggle-button {
-    padding:1em;
-    border:none;
-    cursor:pointer;
-    display:none;
-    text-transform: uppercase;
-    position: absolute;
-    right: 50px;
-    top: 2px;
-    width: 120px;
-    color:#ccc;
+	padding:1em;
+	border:none;
+	cursor:pointer;
+	display:none;
+	text-transform: uppercase;
+	position: absolute;
+	right: 50px;
+	top: 2px;
+	width: 120px;
+	color:#ccc;
 }
 ul.menu-list{
-    background-color: ;
-    list-style:none;
-    position:relative;
-    display:table-cell;
-    padding:0px;
-    margin:0px;
-    height:100%;
+	background-color: ;
+	list-style:none;
+	position:relative;
+	display:table-cell;
+	padding:0px;
+	margin:0px;
+	height:100%;
 }
 ul.menu-list li{
-    float:left;
-    position:relative;
-    border-right: 1px solid #CCC; border-top: 1px solid #CCC;
+	float:left;
+	position:relative;
+	border-right: 1px solid #CCC; border-top: 1px solid #CCC;
 }
 ul.menu-list li a {
-    display:inline-block;
+	display:inline-block;
 }
 ul.menu-list li a:hover {
-    background-color: #2D6098;
-    color: #fff;
+	background-color: #2D6098;
+	color: #fff;
 }
 ul.menu-list li a {
-    display:block;
+	display:block;
 }
 
 /* Handling Submenu */
 ul.menu-list ul{
-    display:none;
-    padding:0px;
-    margin:0px;
-    position:absolute;
-    top:100%;
-    left:0%;
-    list-style:none;
-    width:100%;
-    z-index: 700;
-}    
+	display:none;
+	padding:0px;
+	margin:0px;
+	position:absolute;
+	top:100%;
+	left:0%;
+	list-style:none;
+	width:100%;
+	z-index: 700;
+}	
 ul.menu-list ul li{
-    position:relative;
-    float:none;
-    padding:0px;
-    margin:0px;
+	position:relative;
+	float:none;
+	padding:0px;
+	margin:0px;
 }
 ul.menu-list ul ul{
-    position:absolute;
-    top:0%;
-    left:100%;
-    z-index: 700;
+	position:absolute;
+	top:0%;
+	left:100%;
+	z-index: 700;
 }
 ul.menu-list li:hover>ul {
-    display:inline-block;
+	display:inline-block;
 }
 /* End Init Logic */
 
 /* Style */
 
 ul.menu-list li:hover>ul{
-    background:#fff!ie;
+	background:#fff!ie;
 } /* Fix for IE7 */
 
 /* Submenu Expand Icon */
 ul.menu-list li.has-submenu>a>span.menu-expand{
-    font-size: 0.6em;
-    float:right;
-    padding-left:10px;
-    line-height:2.2em;
+	font-size: 0.6em;
+	float:right;
+	padding-left:10px;
+	line-height:2.2em;
 } 
 /* All levels */
 ul.menu-list li.has-submenu>a>span.menu-expand {
-    float:none\9;
+	float:none\9;
 } /* Fix for IE9 and below */
 ul.menu-list>li.has-submenu>a>span.menu-expand{} /* Level 1 */
 ul.menu-list>li.has-submenu>a>span.menu-expand:after{content:'\25BC'} /* Level 1 */
@@ -373,13 +373,13 @@ ul.menu-list li li.has-submenu>a>span.menu-expand:after{content:'\25BA'} /* Leve
 
 /* You can manage with of elements by width of a-tag */
 ul.menu-list li a {
-    background-color: #fff;
-    color:#003366;
-    text-decoration:none;
-    padding:15px;
+	background-color: #fff;
+	color:#003366;
+	text-decoration:none;
+	padding:15px;
 } 
 ul.menu-list.list-inline > li {
-    padding-right: 0;
+	padding-right: 0;
 }
 
 /* All levels */
@@ -389,11 +389,11 @@ ul.menu-list li li li>a{} /* Level 3 */
 
 /* First Level*/
 ul.menu-list>li{
-    margin:0px 5px 0px 0px;
-    border-top: 1px solid #eee;
+	margin:0px 5px 0px 0px;
+	border-top: 1px solid #eee;
 }
 ul.menu-list>li>a{
-    background:  #fff;
+	background:  #fff;
 }
 ul.menu-list>li:hover{}
 ul.menu-list>li:hover>a{}
@@ -589,7 +589,7 @@ abbr[title], abbr[data-original-title] {
     font-weight: bold;
 }
 .section {
-    padding-bottom: 40px;
+    padding-top: 40px;
 }
 .landing.section {
     padding-top: 20px;
@@ -602,12 +602,10 @@ abbr[title], abbr[data-original-title] {
     float: left;
 }
 .content .intro {
-	color: #5A7999;
-	font-family: georgia;
-	font-size: 1.1em;
-	font-style: italic;
-	line-height: 1.8em;
-	padding-bottom: 0.5em;
+    color: #5A7999;
+    font-size: 1.4em;
+    line-height: 1.6em;
+    padding-bottom: 0.5em;
 }
 .a964927 #services.row {
    padding-left: 15px;
@@ -778,6 +776,20 @@ main #buttons a.btn-default {
 }
 /* @end */
 
+/* @group Link types */ /* ========================================================= Link types */
+a.uom {
+    background: url('mysource_files/ext-u.gif') no-repeat scroll 100% 0 transparent;
+    padding: 0 15px 0 0;
+}
+a.external {
+    background: url(mysource_files/external.gif) no-repeat scroll 100% 0 transparent;
+    padding: 0 15px 0 0;
+}
+a.email {
+    background: url(mysource_files/email.png) no-repeat scroll 100% 0 transparent;
+    padding: 0 15px 0 0;
+}
+/* @end */
 
 /* @group Document icons */ /* ==================================================== Document icons */
 
@@ -821,9 +833,6 @@ input[type="text"], textarea {
 /* @end */
 
 /* @group Asset builders */ /* ==================================================== Asset builders */
-.asset-builder {
-	width: 70%;
-}
 #upload {
     padding-top: 40px;
 }
@@ -851,15 +860,9 @@ form div.sq-backend-smallprint {
 .asset-builder label {
     background-color: #efefef;
     text-align: right;
-    margin-bottom: 0;
 }
-.asset-builder input[type="text"],
-.asset-builder textarea {
-    width: 100%;
-}
-.asset-builder span {
-	display: block;
-	clear:  right;
+.asset-builder input[type="text"]{
+    width: 85%;
 }
 .submit {
     padding-left: 15px;
@@ -1152,76 +1155,76 @@ footer .meta dl {
 /* DaisyNav Menu Styles */
 /* Init Logic */
 .menu-toggle-button {
-    display:block; 
+	display:block; 
 }
 .show-for-devices{
-    display:block!important;
+	display:block!important;
 }
 ul.menu-list{
-    display:none;
+	display:none;
 }
 ul.menu-list li{
-    clear:both;
-    float:none;
+	clear:both;
+	float:none;
 }
 
 
 /* Handling Submenu */
 ul.menu-list ul{
-    display:none;
-    position:relative;
+	display:none;
+	position:relative;
 }
 ul.menu-list ul ul {
-    position:relative;
-    top:100%;
-    left:0%;
+	position:relative;
+	top:100%;
+	left:0%;
 }
 ul.menu-list li:hover>ul{
-    display:none;
+	display:none;
 }
 /* End Init Logic */
 
 /* Style */
 
 ul.menu-list li:hover>ul{
-    background:#fff!ie;
+	background:#fff!ie;
 } /* Fix for IE7 */
 
 /* Submenu Expand Icon */
 ul.menu-list li.has-submenu>a>span.menu-expand{
-    color:#35597C;
-    font-size:1em;
-    padding:0.8em 1.5em;
-    line-height:1em;
-    position:absolute;
-    right:0;
-    top:3px;
-    z-index: 700;
+	color:#35597C;
+	font-size:1em;
+	padding:0.8em 1.5em;
+	line-height:1em;
+	position:absolute;
+	right:0;
+	top:3px;
+	z-index: 700;
 } 
 /* All levels */
 ul.menu-list li li.has-submenu>a>span.menu-expand:after{content:'\25BC';} /* Level 2 */
 
 /* You can manage with of elements by width of a-tag */
 ul.menu-list li a {
-    color:#333;
-    position:relative;
-    width: 100%;
+	color:#333;
+	position:relative;
+	width: 100%;
 } 
 /* All levels */
 ul.menu-list li>a{} /* Level 1 */
 ul.menu-list li li>a {
-    width:auto;
+	width:auto;
 } 
 /* Level 2 */
 ul.menu-list li li li>a{} 
 /* Level 3 */
 ul.menu-list li li li>a{
-    background:  #eee;
+	background:  #eee;
 } 
 
 /* First Level*/
 ul.menu-list>li{
-    margin:0px;
+	margin:0px;
 }
 ul.menu-list>li>a{}
 ul.menu-list>li:hover{background:#eee;}
@@ -1297,9 +1300,6 @@ body.content h1 {
 }
 a.site-title {
     margin-left: 175px;
-}
-.section {
-    padding-top: 40px;
 }
 }
 
