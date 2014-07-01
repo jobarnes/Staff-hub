@@ -821,8 +821,11 @@ input[type="text"], textarea {
 /* @end */
 
 /* @group Asset builders */ /* ==================================================== Asset builders */
-.asset-builder {
-	width: 70%;
+.asset-builder fieldset div {
+	border-top: 1px dotted #CCC;
+	display: block;
+	overflow: auto;
+	padding: 15px 0;
 }
 #upload {
     padding-top: 40px;
@@ -830,11 +833,14 @@ input[type="text"], textarea {
 #upload h2 {
    padding-bottom: 1em;
 }
+.asset-builder h3 {
+	color: #64A600;
+}
 form div.sq-backend-smallprint {
    color: #777;
    font-size: 0.85em;
    margin-top: 0; padding-top: 5px;
-   margin-bottom: 1.5em;
+   border-top: none;
 }
 #word_doc_0_choose_server_file_button,
 #excel_doc_0_choose_server_file_button,
@@ -849,17 +855,46 @@ form div.sq-backend-smallprint {
     display: none;
 }
 .asset-builder label {
-    background-color: #efefef;
-    text-align: right;
-    margin-bottom: 0;
+/*    background-color: #efefef;
+    text-align: right; */
+    margin-bottom: 0; 
+    position: relative;
+    left: -15px;
 }
 .asset-builder input[type="text"],
 .asset-builder textarea {
     width: 100%;
+    padding: 5px;
 }
 .asset-builder span {
 	display: block;
 	clear:  right;
+}
+#sq-asset-builder-header ul li.sq-asset-builder-tab, 
+#sq-asset-builder-header ul li.sq-asset-builder-tab-active {
+	background-image: none;	
+	float: left;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	padding-left: 0;
+	padding-top: 8px;
+}
+#sq-asset-builder-header {
+	clear: right;
+	overflow:  auto;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+#sq-asset-builder-header a {
+	background-color: #efefef;
+	padding: 10px 15px;
+	border-bottom: none;
+}
+#sq-asset-builder-header li.sq-asset-builder-tab-active a {
+	background-color: #fff;
+}
+#image_0_file_upload {
+	border-top: 1px solid #ccc;
 }
 .submit {
     padding-left: 15px;
