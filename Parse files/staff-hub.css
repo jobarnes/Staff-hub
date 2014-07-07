@@ -1388,18 +1388,16 @@ main .list-2-col li {
 /* @group Search */ /* =================================================== Search */
 
 /* @group combosearch */
+.searchform {z-index:101;margin-top:-20px;padding-bottom:20px;}
+.searchform .search-type-array label {font-size:90%;color:#737373;font-weight:normal;padding-right:2em;}
+.searchform ::-webkit-input-placeholder {color:#737373;}
+.searchform :-moz-placeholder {color:#737373;}/* Firefox 18- */
+.searchform ::-moz-placeholder {color:#737373;}
+.searchform :-ms-input-placeholder {color:#737373;}
 
-/* typeahead stuff */
-
-.twitter-typeahead {
-  width: 90%;
-}
-.typeahead {
-  width: 100%;
-}
 .submitgroup {
-	position:relative; 
-	max-width:400px;
+  position:relative; 
+  max-width:400px;
 }
 .submitgroup .btn-search {
   position:absolute;
@@ -1411,7 +1409,16 @@ main .list-2-col li {
   -moz-border-radius-bottomleft: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  border: 1px solid #356FA1 !important; /* why do I have to use important here? anyone!? */
+  border: 1px solid #356FA1 !important;
+}
+
+/* typeahead stuff */
+
+.twitter-typeahead {
+  width: 90%;
+}
+.typeahead {
+  width: 100%;
 }
 .typeahead,
 .tt-query,
