@@ -602,12 +602,12 @@ abbr[title], abbr[data-original-title] {
     float: left;
 }
 .content .intro {
-	color: #5A7999;
-	font-family: georgia;
-	font-size: 1.1em;
-	font-style: italic;
-	line-height: 1.8em;
-	padding-bottom: 0.5em;
+    color: #5A7999;
+    font-family: georgia;
+    font-size: 1.1em;
+    font-style: italic;
+    line-height: 1.8em;
+    padding-bottom: 0.5em;
 }
 .a964927 #services.row {
    padding-left: 15px;
@@ -816,25 +816,22 @@ main label {
     color: #036;
 }
 input[type="text"], textarea {
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
 }
 /* @end */
 
 /* @group Asset builders */ /* ==================================================== Asset builders */
 .asset-builder fieldset div {
-	border-top: 1px dotted #CCC;
-	display: block;
-	overflow: auto;
-	padding: 15px 0;
+    border-top: 1px dotted #CCC;
+    display: block;
+    overflow: auto;
+    padding: 15px 0;
 }
 #upload {
     padding-top: 40px;
 }
 #upload h2 {
    padding-bottom: 1em;
-}
-.asset-builder h3 {
-	color: #64A600;
 }
 form div.sq-backend-smallprint {
    color: #777;
@@ -851,7 +848,9 @@ form div.sq-backend-smallprint {
 #mp3_file_0_choose_server_file_button,
 #powerpoint_doc_0_choose_server_file_button,
 .file-upload br,
-.file-upload p {
+.file-upload p,
+.asset-builder b,
+#metadata_field_date_1066899_duration, #metadata_field_date_1066899_period {
     display: none;
 }
 .asset-builder label {
@@ -867,34 +866,34 @@ form div.sq-backend-smallprint {
     padding: 5px;
 }
 .asset-builder span {
-	display: block;
-	clear:  right;
+    display: block;
+    clear:  right;
 }
 #sq-asset-builder-header ul li.sq-asset-builder-tab, 
 #sq-asset-builder-header ul li.sq-asset-builder-tab-active {
-	background-image: none;	
-	float: left;
-	border-top: 1px solid #ccc;
-	border-left: 1px solid #ccc;
-	padding-left: 0;
-	padding-top: 8px;
+    background-image: none;    
+    float: left;
+    border-top: 2px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding-left: 0;
+    padding-top: 8px;
 }
 #sq-asset-builder-header {
-	clear: right;
-	overflow:  auto;
-	width: 100%;
-	border-bottom: 1px solid #ccc;
+    clear: right;
+    overflow:  auto;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
 }
 #sq-asset-builder-header a {
-	background-color: #efefef;
-	padding: 10px 15px;
-	border-bottom: none;
+    background-color: #efefef;
+    padding: 10px 15px;
+    border-bottom: none;
 }
 #sq-asset-builder-header li.sq-asset-builder-tab-active a {
-	background-color: #fff;
+    background-color: #fff;
 }
 #image_0_file_upload {
-	border-top: 1px solid #ccc;
+    border-top: 0px;
 }
 .submit {
     padding-left: 15px;
@@ -911,6 +910,19 @@ form div.sq-backend-smallprint {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
     vertical-align: middle;
 }
+.asset-builder h3{
+    background-color: #f2f2f2;
+    color: #5C9A00;
+    padding: 30px 15px 15px 15px;
+    margin-bottom: 0;
+}
+.asset-builder h3 .fa {
+    float: right;
+    color: #89B740;
+    position: relative;
+    top: -15px;
+}
+
 /* @end */
 /* @end */
 
@@ -968,10 +980,10 @@ form div.sq-backend-smallprint {
 .content .news-intro {
     padding-left: 0;
 }
-body.content .jumbotron {
+body.content .jumbotron, .asset-builder .jumbotron {
     padding: 10px 25px 25px 25px;
 }
-.content .jumbotron p {
+.content .jumbotron p, .asset-builder .jumbotron {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.8em;
