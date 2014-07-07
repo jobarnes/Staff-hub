@@ -1,3 +1,6 @@
+/* @override 
+	https://staff.unimelb.edu.au/__data/assets/file/0019/961012/example.css */
+
 /* 
 uni blue.......#003366
 dark blue:.....#002953
@@ -831,10 +834,10 @@ form div.sq-backend-smallprint {
    font-size: 24px;
    padding-bottom: .2em;
 }
-	.home .jumbotron h1 a {
-		color: #2A5F99;
-		border-bottom: none;
-	}
+    .home .jumbotron h1 a {
+        color: #2A5F99;
+        border-bottom: none;
+    }
 .jumbotron p {
    font-size: 16px;
    font-weight: 200;
@@ -1383,6 +1386,90 @@ main .list-2-col li {
 
 
 /* @group Search */ /* =================================================== Search */
+
+/* @group combosearch */
+
+/* typeahead stuff */
+
+.twitter-typeahead {
+  width: 90%;
+}
+.typeahead {
+  width: 100%;
+}
+.submitgroup {
+	position:relative; 
+	max-width:400px;
+}
+.submitgroup .btn-search {
+  position:absolute;
+  right:0;
+  top:0;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid #356FA1 !important; /* why do I have to use important here? anyone!? */
+}
+.typeahead,
+.tt-query,
+.tt-hint {
+  padding:0 1rem;
+  height: 35px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  outline: none;
+}
+.typeahead:hover {
+border-color: #A0A0A0 #B9B9B9 #B9B9B9;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+.typeahead:focus {
+border-color: #66AFE9;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+}
+.tt-hint {
+  color:#999;
+/*  color: #737373; */
+}
+.tt-dropdown-menu {
+  width: 100%;
+  margin-top: 6px;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.2);
+}
+.tt-suggestion {
+  padding: 0.5rem 1rem;
+}
+.tt-suggestion.tt-cursor {
+  background-color: #66AFE9;
+  cursor:pointer;
+}
+.tt-suggestion.tt-cursor a {
+  color: #fff;
+  text-decoration:none;
+  border:0;
+}
+.tt-suggestion p {
+  margin: 0;
+}
+.tt-dropdown-menu {
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+/* @end */
+
 /* @group how bar */
 
 .how-bar {
@@ -1861,4 +1948,5 @@ body .news-summary .jumbotron {
 .site-title {
       padding: 0; margin: 0;
 }
+
 /* @end */
