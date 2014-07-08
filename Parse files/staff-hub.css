@@ -1409,7 +1409,7 @@ main .list-2-col li {
   -moz-border-radius-bottomleft: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  border: 1px solid #356FA1 !important;
+  border: 1px solid #356FA1 !important; /* why do i need to make this important!?! */
   border-bottom-width: 2px !important;
 }
 
