@@ -1,24 +1,25 @@
 <div class="row">
-<fieldset class="col-md-9 col-md-push-3">
-	<h3>2.1 Image details <i class="fa fa-file-image-o fa-2x"></i></h3>
+<div class="col-md-3">
+       <p>Paste an embed code from Vimeo or YouTube. Before you copy the embed code customise the width to 845px.</p>
+</div>
+<fieldset class="col-md-9">
+	<h3><i class="fa fax5  fa-file-video-o"></i> 2.1 Video information</h3>
 	<div>
-		<label class="question required col-md-2" for="image_0_175">Image title</label> 
-		<span class="answer col-md-10">%details-F_title%</span>
+		<label class="question required col-md-2" for="data_record_0_1901">Video title</label> 
+		<span class="answer col-md-10">%details-F_name%</span>
 	</div>
 	<div>
-		<label class="question required col-md-2" for="image_0_file_upload">Upload file</label> 
-		<span class="answer file-upload col-md-10">%details-F_file_upload%</span>
+		<label class="question required col-md-2" for="metadata_field_text_1064790_value">Embed code</label> 
+		<span class="answer col-md-10">%metadata-F_1066685%</span>
 	</div>
 	<div>
-		<label class="question required col-md-2" for="image_0_176">Alt</label> 
-		<span class="answer col-md-10">%details-F_alt%</span>
-	</div>
-	<div>
-		<label class="question required col-md-2" for="image_0_177">Caption</label> 
-		<span class="answer col-md-10">%details-F_caption%</span>
+		<label class="question required col-md-2" for="metadata_field_text_1051513_value">Date</label> 
+		<span class="answer col-md-10 news-date-field">
+	        %metadata-F_1066899%
+	        <div class="sq-backend-smallprint">This field is used for the sort order of the slideshow (most recent date is displayed)</div>
+	        </span>
 	</div>
 </fieldset>
-
 
 <fieldset class="col-md-9 col-md-push-3">
 	<h3>2.2 News details <i class="fa fa-bullhorn fa-2x"></i></h3>
@@ -38,13 +39,6 @@
 		<label class="question required col-md-2" for="metadata_field_text_1051513_value">Summary</label> 
 		<span class="answer col-md-10">%metadata-F_1051513%</span>
 	</div>
-	<div>
-		<label class="question required col-md-2" for="metadata_field_text_1051513_value">Date</label> 
-		<span class="answer col-md-10 news-date-field">
-	        %metadata-F_1066899%
-	        <div class="sq-backend-smallprint">This field is used for the sort order of the slideshow (most recent date is displayed)</div>
-	        </span>
-	</div>
 </fieldset>
 
 <fieldset class="col-md-9 col-md-push-3">
@@ -62,13 +56,13 @@
 <div>
 	<label class="question required col-md-2" for="metadata_field_text_1067695_value">News box width on desktops</label> 
 	<span class="answer col-md-2">%metadata-F_1067695%</span>
-        <div class="sq-backend-smallprint col-md-6">A number between 4 and 11, higher numbers increasing the width of the news box covering the image. Leave blank for default value of 7 (approx half of image) or to use the same value as medium option.</div>
-</div>
+        <div class="sq-backend-smallprint col-md-6">A number between 4 and 11, higher numbers increasing the width of the news box covering the image. Leave blank for default value of 7 (approx half of image) or to use the same value as medium option.
+        </div>
 </fieldset>
 </div>
 
 <div class="row submit">
 	<div class="col-md-offset-3">
-	%commit_button_clean%
+		%commit_button_clean%
 	</div>
 </div> 
