@@ -1410,6 +1410,7 @@ main .list-2-col li {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border: 1px solid #356FA1 !important;
+  border-bottom-width: 2px !important;
 }
 
 /* typeahead stuff */
