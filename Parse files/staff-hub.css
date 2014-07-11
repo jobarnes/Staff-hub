@@ -7,8 +7,9 @@ bright blue:...#1F66AD
 /* @group Base */ /* =============================================================== BASE*/
 body {
     line-height: 1.4;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 300;
+    letter-spacing:0.2px;
 }
 /* @group Selected text */ /* ====================================================== Selected text */
 ::selection {
@@ -749,7 +750,7 @@ input[type="text"], textarea {
 }
 /* @end */
 
-/* @group Asset builders */ /* ==================================================== Asset builders */
+/* @group Asset builders */ /* ==================================================== Asset builders 
 #upload {
     padding-top: 40px;
 }
@@ -795,8 +796,7 @@ form div.sq-backend-smallprint {
     padding: 9px 18px 8px;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
     vertical-align: middle;
-}
-
+}*/
 /* @end */
 /* @end */
 
@@ -910,7 +910,7 @@ a.more .fa {
 }
 .video-frame {
     position: relative;
-    height:475px;
+    height:164px;
 }
 .video-frame iframe {
     position:absolute;
@@ -1729,6 +1729,9 @@ img.logo {
     left: 0px;
     top:  0px;
 }
+.video-frame {
+    height:250px;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -1797,6 +1800,9 @@ body.content h1 {
 }
 a.site-title {
     margin-left: 175px;
+}
+.video-frame {
+    height:475px;
 }
 }
 
