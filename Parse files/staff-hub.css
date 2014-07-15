@@ -511,6 +511,9 @@ abbr[title], abbr[data-original-title] {
 .a964927 #services.row {
    padding-left: 15px;
 }
+.a958205 #services.row {
+   padding-top: 10px;
+}
 .support .menu-list {
     display: none;
 }
@@ -680,7 +683,7 @@ main #buttons a.btn-default {
     border: none;
 }
 .home .index.link-block {
-	padding-top: 2em;
+    padding-top: 2em;
 }
 /* @end */
 
@@ -786,11 +789,7 @@ form div.sq-backend-smallprint {
     padding: 9px 18px 8px;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
     vertical-align: middle;
-<<<<<<< HEAD
-}
-=======
 } */
->>>>>>> FETCH_HEAD
 /* @end */
 /* @end */
 
@@ -912,6 +911,9 @@ a.more .fa {
     width:100%;
     top:0px;
     left:0px;
+}
+.nooverlay {
+    display: none;
 }
 
 /* @end */
@@ -1708,6 +1710,14 @@ body .news-summary .jumbotron, .video-frame iframe {
 }
 .home .jumbotron {
     min-height: 480px;
+}
+.home .searchform {
+    padding-left: 12px;
+    position: relative;
+    right: -18px;
+}
+.home .loginorout {
+	right: -15px;
 }
 }
 
