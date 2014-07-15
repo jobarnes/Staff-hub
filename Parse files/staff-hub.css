@@ -378,19 +378,6 @@ dl.inline dd + dd {
     position: relative;
     top: 0px;
 }
-.search {
-    padding-bottom: 2em;
-}
-.search label {
-    color: #036;
-    display: block;
-    font-size: 1.2em;
-    font-weight: normal;
-}
-input#search {
-    width: 350px;
-    padding: 5px;
-}
 /* ===== FEEDBACK ===== */
 .feedback {
     border-top: 1px solid #fff;
@@ -1623,9 +1610,6 @@ a.site-title {
 .quicklinks i.fa {
     font-size: 1.8em;
 }
-.find-form label {
-    padding-left: 15px;
-}
 #directory {
     padding-top: 0px; margin-top: 0;
     border-top: none;
@@ -1718,9 +1702,6 @@ body .news-summary .jumbotron, .video-frame iframe {
     position: relative;
     top: -5px;
 }
-.people-search .col-xs-9 {
-    width: 80%;
-}
 .home .jumbotron {
     min-height: 480px;
 }
@@ -1746,9 +1727,6 @@ body .news-summary .jumbotron, .video-frame iframe {
 body .news-summary .jumbotron {
     min-height: 100px;
     min-width: auto;
-}
-.people-search .col-xs-9 {
-    width: 85%;
 }
 .home .jumbotron h1 {
     font-size: 54px;
