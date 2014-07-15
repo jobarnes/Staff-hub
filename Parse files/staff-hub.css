@@ -692,6 +692,9 @@ main #buttons a.btn-default {
     clear: both;
     border: none;
 }
+.home .index.link-block {
+	padding-top: 2em;
+}
 /* @end */
 
 /* @group Link types */ /* ========================================================= Link types */
