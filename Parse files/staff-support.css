@@ -393,7 +393,7 @@ ul.menu-list>li{
     border-top: 1px solid #ddd;
 }
 ul.menu-list>li:first-child {
-	border-left: 1px solid #ddd;
+    border-left: 1px solid #ddd;
 }
 ul.menu-list>li>a{
     background:  #fff;
@@ -829,6 +829,7 @@ input[type="text"], textarea {
     display: block;
     overflow: auto;
     padding: 15px 0;
+    width: 100%;
 }
 #upload {
     padding-top: 40px;
@@ -926,7 +927,27 @@ form div.sq-backend-smallprint {
     position: relative;
     top: -15px;
 }
-
+.error p, .error ul {
+    background-color: #F2DEDE;
+    color: #A94341;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-left: 1px solid #ebccd1;
+    border-right: 1px solid #ebccd1;
+}
+.error p {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top: 1px solid #ebccd1;
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+.error ul {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ebccd1;
+}
 /* @end */
 /* @end */
 

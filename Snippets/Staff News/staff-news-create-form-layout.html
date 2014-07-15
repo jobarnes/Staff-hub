@@ -1,21 +1,29 @@
 <p>Enter the details of your News item below. Pay particular attention to the fields marked with <span class="required">*</span></p>
 <div class="newnews">
-<div class="row">
-<div class="col-md-7">
 <fieldset>
   <legend>Select the <i>first</i> issue/subsection this item should appear in. <b class="required" title="Required">*</b></legend>
+<div class="row"><!-- row 1 -->
+<div class="col-md-7">
   <div class="dest radio">
     %issues_field%
   </div>
+</div>
+</div><!-- end row 1 -->
 </fieldset>
+
 <fieldset>
   <legend>Item Details</legend>
 
+<div class="row"><!-- row 2 -->
+<div class="col-md-7">
     <label for="metadata_field_select_975143">Item type</label>
     %metadata-F_975143%
     <p class="help-block">Select the type of item to show different options below.</p>
+</div>
+</div><!-- end row 2 -->
 
-  <div class="form-group">
+<div class="row form-group"><!-- row 3 -->
+<div class="col-md-7">
     <label for="page_standard_0_378">Item title <b class="required" title="Required">*</b></label>
     %details-F_name%
     <p class="help-block"><span id="count_name">75</span> characters remaining.<br>
@@ -33,43 +41,73 @@
     <i title="Seeking computer users" class="btn btn-default btn-xs study">Seeking computer users</i>
     <i title="Book launch" class="btn btn-default btn-xs whatson">Book launch</i>
     </p>
-  </div>
-  <div class="form-group whatson">
+</div>
+<div class="col-md-5 alert alert-info">Please keep your title short, do not include dates.</div>
+</div><!-- end row 3 -->
+
+<div class="row form-group whatson"><!-- row 4 -->
+<div class="col-md-7">
     <label for="metadata_field_text_975126_value">Date</label>
     <input type="text" name="metadata_field_text_975126_value" value="" size="30" class="sq-form-field form-control" id="metadata_field_text_975126_value">
     <p class="help-block">Examples: <i title="%globals_date_l% %globals_date_j% %globals_date_F% %globals_date_g%.%globals_date_i%%globals_date_a%" class="btn btn-default btn-xs">Single day and time</i> <i title="%globals_date_l% %globals_date_j% %globals_date_F% 11.00am - 12.30pm" class="btn btn-default btn-xs">Single day with start and finish time</i> <i title="Monday 10 December 11.00am - Friday 14 December 3.00pm" class="btn btn-default btn-xs">Multiple days</i></p>
-  </div>
-  <div class="form-group whatson">
+</div>
+</div><!-- end row 4 -->
+  
+<div class="row form-group whatson"><!-- row 5 -->
+<div class="col-md-7">
     <label for="metadata_field_text_975129_value">Optional event name</label>
     %metadata-F_975129%
     <p class="help-block"><span id="count_975129">50</span> characters remaining.</p>
-  </div>
-  <div class="form-group">
+</div>
+</div><!-- end row 5 -->
+
+<div class="row form-group"><!-- row 6 -->
+<div class="col-md-7">
     <label for="metadata_field_text_975124_value">Item content</label>
     %metadata-F_975124%
     <p class="help-block"><span id="count_975124">500</span> characters remaining. Please don't create new lines.</p>
-  </div>
-  <div class="form-group study">
+</div>
+<div class="col-md-5 alert alert-info">
+	Please write in the third person – Do not write ‘I’ or ‘you’. E.g. - <span class="text-success"><i class="fa fa-check-circle"></i> <i>Staff will need to submit items</i></span>. not; <span class="text-danger"><i class="fa fa-times-circle"></i>  <i>You will need to submit an item</i></span>.<br>Please keep content brief and factual, hyperbole and jargon will be edited out.<br>Please spell out acronyms in the first instance.
+</div>
+</div><!-- end row 6 -->
+
+<div class="row form-group study"><!-- row 7 -->
+<div class="col-md-7">
     <label for="metadata_field_text_975078_value">HREC (or other approval reference) <b class="required" title="Required">*</b></label>
     %metadata-F_975078%
-  </div>
+</div>
+<div class="col-md-5 alert alert-info">You must include some form of ethics approval for your item to run, whether it is HREC, from one of the hospitals, or other.</div>
+</div><!-- end row 7 -->
+
 </fieldset>
 <fieldset class="whatson" style="display: block;">
   <legend>Extra what's on details</legend>
-  <div class="form-group">
+
+<div class="row form-group"><!-- row 8 -->
+<div class="col-md-7">
     <label for="metadata_field_text_975072_value">Presenter</label>
     <input type="text" name="metadata_field_text_975072_value" value="" size="30" class="sq-form-field form-control" id="metadata_field_text_975072_value">
     <p class="help-block">Examples: <i title="Professor B Goode, Dean of Science, Edinburgh University." class="btn btn-default btn-xs">Professor B Goode, Dean of Science, Edinburgh University.</i></p>
-  </div>
-  <div class="form-group">
+</div>
+</div><!-- end row 8 -->
+
+<div class="row form-group"><!-- row 9 -->
+<div class="col-md-7">
     <label for="metadata_field_text_975117_value">Venue</label>
     <input type="text" name="metadata_field_text_975117_value" value="" size="30" class="sq-form-field form-control" id="metadata_field_text_975117_value">
     <p class="help-block">Examples: <i title="Carillo Gantner Theatre." class="btn btn-default btn-xs">Carillo Gantner Theatre.</i></p>
-  </div>
+</div>
+</div><!-- end row 9 -->
+
 </fieldset>
+
 <fieldset>
   <legend>Contacts</legend>
- <div class="row">
+  
+<div class="row"><!-- row 10 -->
+<div class="col-md-7">
+ <div class="row"><!-- sub row -->
   <div class="form-group col-sm-6">
     <label for="metadata_field_select_975125">Contact 1 label</label>
     %metadata-F_975125%
@@ -82,8 +120,14 @@
     	<i title="0417 XXX XXX" class="btn btn-default btn-xs">0417 XXX XXX</i>
 	</p>
   </div>
- </div>
- <div class="row">
+ </div><!-- end sub row -->
+</div>
+<div class="col-md-5 alert alert-info">It is highly recommended you include a weblink for more information.</div>
+</div><!-- end row 10 -->
+ 
+<div class="row"><!-- row 11 -->
+<div class="col-md-7">
+ <div class="row"><!-- sub row -->
   <div class="form-group col-sm-6">
     <label for="metadata_field_select_975116">Contact 2 label</label>
     %metadata-F_975116%
@@ -93,28 +137,43 @@
     %metadata-F_975130%
     <p class="help-block">Examples: <i title="%globals_user_attribute_first_name% %globals_user_attribute_last_name% 834X XXXX / %globals_user_attribute_email%" class="btn btn-default btn-xs">%globals_user_attribute_first_name% %globals_user_attribute_last_name% 834X XXXX / %globals_user_attribute_email%</i></p>
   </div>
- </div>
-  <div class="form-group corporate training grants study">
+ </div><!-- end sub row -->
+</div>
+</div><!-- end row 11 -->
+
+<div class="row form-group corporate training grants study"><!-- row 12 -->
+<div class="col-md-7">
     <label for="metadata_field_text_975077_value">Source <b class="required" title="Required">*</b></label>
     %metadata-F_975077%
     <p class="help-block">Examples: <i title="%globals_user_attribute_first_name% %globals_user_attribute_last_name%, Department Name" class="btn btn-default btn-xs">%globals_user_attribute_first_name% %globals_user_attribute_last_name%, Department Name</i></p>
-  </div>
+ </div>
+<div class="col-md-5 alert alert-info">You must include a Source for your item to run.</div>
+</div><!-- end row 12 -->
+
 </fieldset>
+
 <fieldset>
   <legend>Anything else?</legend>
+<div class="row"><!-- row 13 -->
+<div class="col-md-7">
   <label for="metadata_field_text_1040446_value">Notes</label>
   %metadata-F_1040446%
   <p class="help-block">Examples:
   	<i title="Please repeat in next issue" class="btn btn-default btn-xs">Please repeat in next issue</i>
   	<i title="Don't publish before Friday" class="btn btn-default btn-xs">Don't publish before Friday</i>
   </p>
+</div>
+</div><!-- end row 13 -->
 </fieldset>
+
 <h3>Check your submission carefully</h3>
 <p>There is no facility for editing after saving.</p>
-<div id="preview"></div>
+<div class="row">
+	<div id="preview" class="col-md-7"></div>
 </div>
-<div class="col-md-5">
+</div><!-- ??? -->
+</div><!-- ??? -->
+<div class="row">
+  <div class="col-md-7">%commit_button_clean%</div>
 </div>
-</div>
-%commit_button_clean%
-</div>
+</div><!-- end newnews -->

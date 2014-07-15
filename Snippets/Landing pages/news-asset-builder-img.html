@@ -17,6 +17,13 @@
 		<label class="question required col-md-2" for="image_0_177">Caption</label> 
 		<span class="answer col-md-10">%details-F_caption%</span>
 	</div>
+	<div>
+		<label class="question required col-md-2" for="metadata_field_text_1066899_value">Date</label> 
+		<span class="answer col-md-10 news-date-field">
+	        %metadata-F_1066899%
+	        <div class="sq-backend-smallprint">This field is used for the sort order of the slideshow (most recent date is displayed)</div>
+	        </span>
+	</div>
 </fieldset>
 
 
@@ -38,13 +45,6 @@
 		<label class="question required col-md-2" for="metadata_field_text_1051513_value">Summary</label> 
 		<span class="answer col-md-10">%metadata-F_1051513%</span>
 	</div>
-	<div>
-		<label class="question required col-md-2" for="metadata_field_text_1051513_value">Date</label> 
-		<span class="answer col-md-10 news-date-field">
-	        %metadata-F_1066899%
-	        <div class="sq-backend-smallprint">This field is used for the sort order of the slideshow (most recent date is displayed)</div>
-	        </span>
-	</div>
 </fieldset>
 
 <fieldset class="col-md-9 col-md-push-3">
@@ -65,10 +65,22 @@
         <div class="sq-backend-smallprint col-md-6">A number between 4 and 11, higher numbers increasing the width of the news box covering the image. Leave blank for default value of 7 (approx half of image) or to use the same value as medium option.</div>
 </div>
 </fieldset>
+
+<fieldset class="col-md-9 col-md-push-3">
+<h3>2.4 Feature box width adjustment (admin only)</h3>
+	<div class="feature-width">
+		<label class="question col-md-2" for="metadata_field_text_1074876_value">Width of feature box</label> 
+		<span class="answer col-md-10">
+	        %metadata-F_1074876%
+	        <div class="sq-backend-smallprint">Leave as default 2/3 width unless you are an administrator adding a News and Events feature item.</div>
+	        </span>
+	</div>
+</fieldset>
 </div>
 
+
 <div class="row submit">
-	<div class="col-md-offset-3">
-	%commit_button_clean%
-	</div>
+<div class="col-md-offset-3">
+%commit_button_clean%
+</div>
 </div> 
