@@ -649,6 +649,7 @@ abbr[title], abbr[data-original-title] {
 }
 /* @end */
 
+
 /* @group Breadcrumbs */ /* ===================================================== Breadcrumbs */
 ol.breadcrumb, .container.breadcrumbs {
     margin-bottom: 0;
@@ -679,6 +680,27 @@ a.more {
 .alert-success {
    background-color: #EBEFD7;
 }
+/* @end */
+
+
+/* @group Related */ /* ========================================================= Related */
+
+.related {
+	background-color: #F2F7F9;
+	border: 1px solid #ccc;
+	padding: 40px 25px 20px 25px;
+	position: relative;
+	top: -40px;
+}
+
+.related h2 {
+   font-size: 1.1em;
+   text-transform: uppercase;
+   font-weight: 400;
+   margin-top: 0;
+}
+
+
 /* @end */
 
 
@@ -760,6 +782,8 @@ main #buttons a.btn-default {
 .main .link-block li {
     background: none repeat scroll 0 0 transparent;
     padding-left: 0;
+    line-height: 1.2em;
+    padding-bottom: .6em;
 }
 .link-block > ul > li {
     background: none repeat scroll 0 0 transparent;
@@ -771,6 +795,8 @@ main #buttons a.btn-default {
 .link-block > ul > li > a {
     color: #8C2300;
     font-size: 1.2em;
+    padding-bottom: 1em;
+    display: block;
 }
 .link-block > ul > li:nth-child(3n+1) {
     clear: right;
@@ -806,6 +832,9 @@ main a[href$=".mov"] {
 }
 main a[href$=".mp3"], main a[href$=".aif"] {
     background-image: url("//www.unimelb.edu.au/template-assets/07/images/tiny/tiny_mp3_icon.gif");
+}
+main a.btn[href$=".pdf"], main a.btn[href$=".doc"], main a.btn[href$=".docx"]{
+	background-image:  none;
 }
 /* @end */
 
@@ -951,6 +980,7 @@ form div.sq-backend-smallprint {
 /* @end */
 /* @end */
 
+
 /* @group Home */ /* ===================================================================== */
 
 /* @group Boxes */
@@ -1070,8 +1100,11 @@ a.more .fa {
     top:0px;
     left:0px;
 }
+.nooverlay {
+    display: none;
+}
 
-
+/* @end */
 /* @end */
 
 
@@ -1114,7 +1147,7 @@ a.more .fa {
     border-bottom: none;
 }
 
-
+/* @end */
 
 /* @group A-Z list */ /* ==================================================== A-Z list */
 .pagelist a {
@@ -1170,7 +1203,7 @@ a.to-top {
     z-index: 1;
 }
 /* @end */
-/* @end */
+
 
 
 /* @group Media queries */
