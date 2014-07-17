@@ -205,6 +205,7 @@ a.site-title {
     padding: 20px 0;
     position: relative;
     top: -25px;
+    float:left;
 }
 a.site-title:hover {
     text-decoration: none;
@@ -605,12 +606,18 @@ abbr[title], abbr[data-original-title] {
     float: left;
 }
 .content .intro {
+	font-family: Georgia;
     color: #5A7999;
-    font-family: georgia;
     font-size: 1.1em;
     font-style: italic;
     line-height: 1.8em;
     padding-bottom: 0.5em;
+}
+.a958213 .content .intro {
+	font-family: Roboto, sans-serif;
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 200;
 }
 .a964927 #services.row {
    padding-left: 15px;
@@ -686,11 +693,11 @@ a.more {
 /* @group Related */ /* ========================================================= Related */
 
 .related {
-	background-color: #F2F7F9;
-	border: 1px solid #ccc;
-	padding: 40px 25px 20px 25px;
-	position: relative;
-	top: -40px;
+    background-color: #F2F7F9;
+    border: 1px solid #ccc;
+    padding: 40px 25px 20px 25px;
+    position: relative;
+    top: -40px;
 }
 
 .related h2 {
@@ -793,10 +800,11 @@ main #buttons a.btn-default {
     width: 100%;
 }
 .link-block > ul > li > a {
-    color: #8C2300;
-    font-size: 1.2em;
+    color: #CE460C;
+    font-size: 1.4em;
     padding-bottom: 1em;
     display: block;
+    font-weight: 200;
 }
 .link-block > ul > li:nth-child(3n+1) {
     clear: right;
@@ -834,7 +842,7 @@ main a[href$=".mp3"], main a[href$=".aif"] {
     background-image: url("//www.unimelb.edu.au/template-assets/07/images/tiny/tiny_mp3_icon.gif");
 }
 main a.btn[href$=".pdf"], main a.btn[href$=".doc"], main a.btn[href$=".docx"]{
-	background-image:  none;
+    background-image:  none;
 }
 /* @end */
 
@@ -1003,7 +1011,26 @@ form div.sq-backend-smallprint {
 }
 /* @end */
 
+/* @group Front page */ /* ====================================================== Front page*/
+
+.help-index .image_div {
+	position: relative;
+	left:  -60px;
+}
+#index.link-block {
+	padding: 0;
+}
+/* @end */
+
 /* @group Jumbotron */ /* ====================================================== Jumbotron*/
+
+.help-index #image .img_div {
+	position: relative;
+	left:  -60px;
+}
+#index.link-block {
+	padding: 0;
+}
 .jumbotron {
     padding-top: 35px;
     padding-bottom: 35px;
