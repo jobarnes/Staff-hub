@@ -606,15 +606,15 @@ abbr[title], abbr[data-original-title] {
     float: left;
 }
 .content .intro {
-	font-family: Georgia;
+    font-family: Georgia;
     color: #5A7999;
     font-size: 1.1em;
     font-style: italic;
     line-height: 1.8em;
     padding-bottom: 0.5em;
 }
-.a958213 .content .intro {
-	font-family: Roboto, sans-serif;
+.content .help-index .intro {
+    font-family: Roboto, sans-serif;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 200;
@@ -1014,22 +1014,24 @@ form div.sq-backend-smallprint {
 /* @group Front page */ /* ====================================================== Front page*/
 
 .help-index .image_div {
-	position: relative;
-	left:  -60px;
+    position: relative;
+    left:  -60px;
 }
 #index.link-block {
-	padding: 0;
+    padding: 0;
 }
 /* @end */
 
 /* @group Jumbotron */ /* ====================================================== Jumbotron*/
-
+.help-index  #image {
+	display: none;
+}
 .help-index #image .img_div {
-	position: relative;
-	left:  -60px;
+    position: relative;
+    left:  -60px;
 }
 #index.link-block {
-	padding: 0;
+    padding: 0;
 }
 .jumbotron {
     padding-top: 35px;
@@ -1130,9 +1132,16 @@ a.more .fa {
 .nooverlay {
     display: none;
 }
+/* @end */
+/* @end */
 
+
+/* @group Page templates section */ /* ======================================== PAGE TEMPLATES SECTION */
+.a1078653 .tab-nav { 
+	display: none;
+}
 /* @end */
-/* @end */
+
 
 
 /* @group Index pages */ /* =================================================== INDEX LANDING PAGES */
@@ -1564,6 +1573,9 @@ body .news-summary .jumbotron {
 }
 .home .jumbotron {
     min-height: 480px;
+}
+.help-index #image {
+	display: block;
 }
 }
 
