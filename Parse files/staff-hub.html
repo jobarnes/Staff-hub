@@ -115,7 +115,7 @@
                  </MySource_LOGIN_SECTION>
                  <MySource_LOGOUT_SECTION>
                  <MySource_PRINT var="form_open" />
-                 <span class="hello hidden-xs"><i class="fa fa-user"></i> Hello  <MySource_PRINT id_name="__global__" var="current_user" default="[Not Logged In]" attr="first_name" /> <MySource_PRINT id_name="__global__" var="current_user" default="[Not Logged In]" attr="last_name" /></span>
+                 <span class="hello hidden-xs"><i class="fa fa-user"></i> Hello %globals_session_saml_attributes_givenname_0% %globals_session_saml_attributes_sn_0% <!-- <MySource_PRINT id_name="__global__" var="current_user" default="[Not Logged In]" attr="first_name" /> <MySource_PRINT id_name="__global__" var="current_user" default="[Not Logged In]" attr="last_name" /> --></span>
                  <span class="goodbye"><a href="%globals_asset_url:1022685%?SQ_ACTION=logout&end_url=%globals_asset_url^urlencode%"><i class="fa fa-sign-out"></i> Log out</a></span>
                  <MySource_PRINT var="form_close" />
                  </MySource_LOGOUT_SECTION>
@@ -146,20 +146,20 @@
   
    <ul class="menu-list list-inline" id="main-nav" role="navigation">
    <MySource_ASSET>
-   <li class="<MySource_PRINT var="settings.class" />"><a href="<MySource_PRINT var='asset_link' />"> <MySource_PRINT var="asset_short_name" /></a>
-   <MySource_SUB design_area="menu_normal"><!-- level 2 -->
-   <MySource_SET name="show_subs" value="always" />
-   <MySource_SET name="settings.class.normal" value="normal" />
-   <MySource_SET name="settings.class.current" value="current" />
-   <MySource_SET name="settings.class.hierarchy" value="hierarchy" />
-   <ul class="submenu">
-   <MySource_ASSET>
-   <li class="<MySource_PRINT var="settings.class" />"><a href="<MySource_PRINT var='asset_link' />"> <MySource_PRINT var="asset_short_name" /></a>
-   </MySource_ASSET>
-   </ul>
-   </MySource_SUB>
-  
-   </MySource_ASSET>
+	   <li class="<MySource_PRINT var="settings.class" />"><a href="<MySource_PRINT var='asset_link' />"> <MySource_PRINT var="asset_short_name" /></a>
+	   <MySource_SUB design_area="menu_normal"><!-- level 2 -->
+	   <MySource_SET name="show_subs" value="always" />
+	   <MySource_SET name="settings.class.normal" value="normal" />
+	   <MySource_SET name="settings.class.current" value="current" />
+	   <MySource_SET name="settings.class.hierarchy" value="hierarchy" />
+   			<ul class="submenu">
+   			<MySource_ASSET>
+   			<li class="<MySource_PRINT var="settings.class" />"><a href="<MySource_PRINT var='asset_link' />"> <MySource_PRINT var="asset_short_name" /></a></li>
+   			</MySource_ASSET>
+   			</ul>
+   		</MySource_SUB>
+	</li>
+  	</MySource_ASSET>
    </ul>
    </MySource_AREA>
    </nav>
