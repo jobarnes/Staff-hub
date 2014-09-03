@@ -1,1 +1,15 @@
- <p>A new feature news item, %asset_name_linked% (asset# %asset_assetid%), has been added to folder %asset_lineage_linked% under the Service Directory on the <a href="./?a=958205">Staff Hub</a>. It was uploaded by %asset_created_by_name%.</p><p>The item has automatically been made live, but you may wish to review the item for quality assurance.<br /></p><ul><li>As long as it is the most recently created asset you can view a preview of the item <a href="./?a=1066795">here</a> (note: demo page, not live context)</li><li>You can navigate through the <a href="./?a=964927">Service Directory</a> index to view it live in it's final context<br /></li><li>You can also <a href="%asset_url%/_edit">edit the item</a> from it's metadata screen<br /></li></ul> 
+<p>A new feature news item on the <a href="./?a=958205">Staff Hub</a> service directory has been added or updated.</p>
+<ul>
+<li><strong>News headline</strong> (if applicable)<strong>:</strong> %asset_metadata_index.news.title%</li>
+<li><strong>Image details:</strong> %asset_name_linked%, asset# %asset_assetid%.</li>
+<li><strong>Uploaded or updated by:</strong> %asset_created_by_name%</li>
+<li><strong>News summary</strong> (if applicable): %asset_metadata_index.news.summary%</li>
+</ul>
+<img src="%asset_url%" alt="%asset_attribute_alt%">
+<p>The item has automatically been made live, but you may wish to review the item for quality assurance. Here are some actions you can take:</p>
+<ul>
+<li>As long as it is the most recently created asset in the service directory you can view a preview of the item <a href="./?a=1066795">on this demo page</a></li>
+<li>You can also <a href="%asset_url%/_admin">edit the item</a> from it's metadata screen (admin view)</li>
+<li><a href="./?a=1051502/_admin">Open the parent folder in administrator view</a></li>
+<li>You can navigate through the <a href="./?a=964927">service directory</a> index to view it live in it's final context</li>
+</ul>
