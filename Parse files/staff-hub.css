@@ -275,10 +275,6 @@ img.logo {
     position: relative;
 /*    top: -15px; */
 }
-/* .loginorout {
-   padding-top: 15px;
-   float: right;
-} */
 /* @end */
 
 /* @group Tab navigation */ /* =================================================== Tab navigation */
@@ -305,8 +301,11 @@ nav.container {
 .tab-nav .current {
     background-color: #efefef;
 }
-.tab-nav li:nth-child(3) {
+.tab-nav li:nth-child(4) {
     border-right: 1px solid #ccc;
+}
+.tab-nav li li {
+    display: none;
 }
 .tab a {
    color: #666;
