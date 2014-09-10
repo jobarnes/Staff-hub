@@ -708,6 +708,9 @@ main #buttons a.btn-default {
     color: #8C2300;
     font-size: 1.2em;
 }
+.link-block > ul > li > a:hover {
+    color #fff;
+}
 .link-block > ul > li:nth-child(3n+1) {
     clear: right;
 }
