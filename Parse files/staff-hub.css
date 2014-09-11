@@ -827,6 +827,12 @@ form div.sq-backend-smallprint {
     vertical-align: middle;
 } */
 /* @end */
+
+/* @group code formatting */
+.code strong {
+    color: #36AD00;
+}
+/* @end */
 /* @end */
 
 /* @group Home */ /* ===================================================================== */
