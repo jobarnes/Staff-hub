@@ -1564,6 +1564,13 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 2
   max-height: 20rem;
   overflow-y: auto;
 }
+.ng-scope.container, .contbox {
+  padding: 0;
+}
+.ng-scope .row {
+  margin: 0;
+}
+
 
 /* @end */
 
