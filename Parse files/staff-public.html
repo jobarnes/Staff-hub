@@ -31,11 +31,21 @@
   
   <MySource_AREA id_name="head" design_area="head" />
   
+  <!-- HTML5 shim - IE8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+  
   <!-- SITE-SPECIFIC RESOURCES -->
     <MySource_AREA id_name="custom_css" design_area="linked_css" print="yes">
            <MySource_SET name="tag_type" value="link_tag" />
            <MySource_SET name="media" value="all" />
     </MySource_AREA>
+    
+  <!-- Respond.js IE8 support of media queries -->
+      <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->      
   
   <!-- [if lte IE 8]>
    <MySource_AREA id_name="ie_css" design_area="linked_css" print="yes">
