@@ -313,7 +313,7 @@ ul.menu-list{
 ul.menu-list li{
     float:left;
     position:relative;
-    border-right: 1px solid #ddd; border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd; border-top: 1px solid #ddd; border-left:1px solid #ddd;
 }
 ul.menu-list li a {
     display:inline-block;
@@ -343,7 +343,7 @@ ul.menu-list ul li{
     float:none;
     padding:0px;
     margin:0px;
-    width: 250px;
+    width: 100%;
 }
 ul.menu-list ul ul{
     position:absolute;
@@ -1394,6 +1394,9 @@ ul.menu-list li.has-submenu>a>span.menu-expand{
     top:3px;
     z-index: 700;
 } 
+ul.menu-list li.has-submenu>a:hover>span.menu-expand {
+    color: #fff;
+}
 /* All levels */
 ul.menu-list li li.has-submenu>a>span.menu-expand:after{content:'\25BC';} /* Level 2 */
 
@@ -1496,6 +1499,12 @@ a.site-title {
 }
 .section {
     padding-top: 40px;
+}
+ul.menu-list li {
+    border-left: none;
+}
+ul.menu-list ul li{
+    width: 250px;
 }
 }
 
