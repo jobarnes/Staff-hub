@@ -343,6 +343,7 @@ ul.menu-list ul li{
     float:none;
     padding:0px;
     margin:0px;
+    width: 250px;
 }
 ul.menu-list ul ul{
     position:absolute;
@@ -414,12 +415,9 @@ ul.menu-list>li>ul{border: none; border-left: 1px solid #ccc;}
 ul.menu-list>li>ul>li{}
 ul.menu-list>li>ul>li>a{}
 ul.menu-list>li>ul>li:hover{}
+ul.menu-list>li>ul>li:last-child{border-bottom: 1px solid #ccc;}
 ul.menu-list>li>ul>li:hover>a{}
 ul.menu-list>li>ul>li>a:hover{}
-
-ul.menu-list li li > a {
-   width: 100%;
-}
 /* End Second Level*/
 
 /* Third Level*/
