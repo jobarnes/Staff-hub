@@ -73,8 +73,6 @@ main .content {
         background-color: #036;
         color: #fff;
         text-decoration: none;
-        padding: 0.2em;
-        margin: -0.2em;
     }
     main p, main ul, main ol, main td, tbody th {
         line-height: 1.6em;
@@ -418,6 +416,10 @@ ul.menu-list>li>ul>li>a{}
 ul.menu-list>li>ul>li:hover{}
 ul.menu-list>li>ul>li:hover>a{}
 ul.menu-list>li>ul>li>a:hover{}
+
+ul.menu-list li li > a {
+   width: 100%;
+}
 /* End Second Level*/
 
 /* Third Level*/
@@ -826,7 +828,7 @@ main #buttons a.btn-default {
     background-color: none;
 }
 .link-block > ul > li > a:nth-child(2n):hover {
-    color: #036;
+    color: #fff;
     margin: 0;
     padding: 0 0 1em 0;
 }
@@ -1014,6 +1016,20 @@ form div.sq-backend-smallprint {
 }
 
 /* @end */
+
+/* @group code formatting */
+.code {
+    background-color: #EFF9EA;
+    color: #00560D;
+    margin:  20px 0;
+    padding: 25px;
+    border: 1px solid #C8DDBE;
+}
+.code strong {
+    color: #00930E;
+}
+/* @end */
+
 /* @end */
 
 
