@@ -1150,7 +1150,15 @@ a.bip-button {
 .hero-aside ul:last-child a:last-of-type {
     border-bottom: none;
 }
-
+.main .hero-aside a.title {
+    border-bottom: none;
+    padding: 0;
+    min-width: 200px;
+    display: inline;
+}
+.hero-aside a.title:hover {
+    display: block;
+}
 
 /* @group Old index pages */
 .hero-links {
@@ -1577,12 +1585,12 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 2
 /* @group Subscribe page */
 
 .subsform label {
-	padding-left: 0.5em;
-	color: #666;
-	font-weight: 300;
+    padding-left: 0.5em;
+    color: #666;
+    font-weight: 300;
 }
 .subsform .btn {
-	margin-top: 1em;
+    margin-top: 1em;
 }
 
 /* @end */
